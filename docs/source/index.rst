@@ -1,8 +1,5 @@
 Scube manual
 ===================================
-.. contents::
-
-
 .. note::
 
    This project is under active development.
@@ -11,8 +8,6 @@ Contents
 --------
 
 .. contents::
-   :depth: 2
-   :local:
 
 Overview
 ========
