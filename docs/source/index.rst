@@ -160,6 +160,7 @@ If you want to use the pre-set wind turbine and support structure (IEA15MW UMain
 - Environmental conditions: ``scube\data\sample_INPUT_environment.xlsx``
 - Tower check criteria: ``scube\data\sample_CNSTR.xlsx``
 - DLC metocean combinations (please refer to `WEIS manual <https://weis.readthedocs.io/en/latest/dlc_generator.html>`__ for detailed explanation on these parameters):
+
   - For analysis Axx Ly, open the file\ ``scube\data\weis_analyses\Axx_Ly\modeling_options_A10_L3.yaml``
   - This is a ``.yaml`` file. You can change the DLC settings in the section (example for DLC1.6):
 
