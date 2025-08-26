@@ -86,30 +86,30 @@ In the miniforge prompt command window, the following should appear (multiple ti
 
 .. code:: bash
 
-Running: test.py A03 L2
-Output:
-Using weis.aeroelasticse in rosco.toolbox...
-
- ******* SCUBE: preprocessing - updating tower geometry *******
-
- ******* SCUBE: postprocessing - results VS constraints analysis *******
-
-         ******* Constraint definitions imported *******
-
-         ******* Simulation output xlsx and yaml files data loaded *******
-
-         ******* Constraint verification started *******
-
-                 Check of constraint Min_twr_1st_fa_freq_L2
-
-                 Check of constraint Min_twr_1st_ss_freq_L2
-
-         ******* Constraint verification completed *******
-               Constraint  ...                                      Description
-0  Min_twr_1st_fa_freq_L2  ...   Min tower natural frequency, 1st fore-aft mode
-1  Min_twr_1st_ss_freq_L2  ...  Min tower natural frequency, 1st side-side mode
-
-[2 rows x 7 columns]
+   Running: test.py A03 L2
+   Output:
+   Using weis.aeroelasticse in rosco.toolbox...
+   
+    ******* SCUBE: preprocessing - updating tower geometry *******
+   
+    ******* SCUBE: postprocessing - results VS constraints analysis *******
+   
+            ******* Constraint definitions imported *******
+   
+            ******* Simulation output xlsx and yaml files data loaded *******
+   
+            ******* Constraint verification started *******
+   
+                    Check of constraint Min_twr_1st_fa_freq_L2
+   
+                    Check of constraint Min_twr_1st_ss_freq_L2
+   
+            ******* Constraint verification completed *******
+                  Constraint  ...                                      Description
+   0  Min_twr_1st_fa_freq_L2  ...   Min tower natural frequency, 1st fore-aft mode
+   1  Min_twr_1st_ss_freq_L2  ...  Min tower natural frequency, 1st side-side mode
+   
+   [2 rows x 7 columns]
 
 ******* SCUBE: Validation report with formatting exported successfully *******
 
