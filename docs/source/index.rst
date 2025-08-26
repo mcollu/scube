@@ -110,10 +110,10 @@ In the miniforge prompt command window, the following should appear (multiple ti
    1  Min_twr_1st_ss_freq_L2  ...  Min tower natural frequency, 1st side-side mode
    
    [2 rows x 7 columns]
-
-******* SCUBE: Validation report with formatting exported successfully *******
-
-[INFO] Time taken: 0:00:03
+   
+   ******* SCUBE: Validation report with formatting exported successfully *******
+   
+   [INFO] Time taken: 0:00:03
 
 Main analysis file
 ==================
