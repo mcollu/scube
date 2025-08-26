@@ -136,7 +136,7 @@ file\ ``scube\data\weis_analyses\Axx_Ly\modeling_options_A10_L3.yaml`` -
 This is a ``.yaml`` file. You can change the DLC settings in the section
 (example for DLC1.6):
 
-::
+.. code:: yaml
 
    DLC_driver:
        DLCs:
