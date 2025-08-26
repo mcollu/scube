@@ -71,13 +71,11 @@ uninstall that first, and then install the new version of SCUBE:*
 Getting started
 ===============
 
-After installation, you can run the analyses with the nomenclature Axx
-Ly as (example below for A01 L0).
+After installation, you can run a quick check to verify the correct installation.
 
-.. image:: scube_structure_20250807.png
-
-3. Now, open a conda prompt (miniforge prompt, for example), navigate to
-   the folder ``scube\tests``
+1. Open a conda prompt (miniforge prompt, for example), navigate to
+   the folder ``scube/tests/output``
+2. Run the following command 
 
 .. code:: bash
 
