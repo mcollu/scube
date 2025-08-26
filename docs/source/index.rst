@@ -33,12 +33,9 @@ Installation
 Pre-requisites
 --------------
 
-*Requires the previous installation of WEIS by NREL. Info on how to
-install it*
-`here <https://weis.readthedocs.io/en/latest/installation.html>`__\ *.*
-*It is recommended to use miniforge to create conda environments and
-install WEIS. Miniforge can be obtained*
-`here <https://github.com/conda-forge/miniforge>`__ *In the following,
+Requires the installation of WEIS by NREL. Info on how to install it `here <https://weis.readthedocs.io/en/latest/installation.html>`__\ *.*
+
+It is recommended to use miniforge to create conda environments and install WEIS. Miniforge can be obtained here <https://github.com/conda-forge/miniforge>`__ *In the following,
 it is assumed that you named ``weis-env`` the WEIS environment where to
 run SCUBE.*
 
@@ -190,15 +187,7 @@ If you want to use the pre-set wind turbine and support structure (IEA15MW UMain
                prop_dir: [90., 0., -90.] # sign of propagation direction is opposite to nacelle heading in OpenFAST
            yaw_misalign: [0]
 
-*NB Note the slight difference in user_group: the “-” in front means
-that this is an indipendent series of values, while the absence of the
-“-” in front means that these values are coupled with the previous
-series of values with the “-”.* *For example, in this case, 9
-simulations will be carried out: 3 wave directions, due to “- wave_dir”,
-times 3 nacelle directions, due to “nace_dir”. The wind propagation
-direction, “pro_dir”, is coupled with the nacelle direction, i.e., for
-nace_dir = -90, the prop_dir is automatically 90, for nace_dir = 0, the
-prop_dir is automatically 0, and so on.*
+*NB Note the slight difference in user_group: the “-” in front means that this is an indipendent series of values, while the absence of the “-” in front means that these values are coupled with the previous series of values with the “-”.* *For example, in this case, 9 simulations will be carried out: 3 wave directions, due to “- wave_dir”, times 3 nacelle directions, due to “nace_dir”. The wind propagation direction, “pro_dir”, is coupled with the nacelle direction, i.e., for nace_dir = -90, the prop_dir is automatically 90, for nace_dir = 0, the prop_dir is automatically 0, and so on.*
 
 Running and Analysis
 ====================
