@@ -2,6 +2,7 @@ Scube manual
 ===================================
 .. contents::
 
+
 .. note::
 
    This project is under active development.
