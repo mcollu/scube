@@ -25,7 +25,10 @@ benchmarking tool”, between January and October 2025.
   or to support its design
 - Simple input spreadsheets for: tower characteristics, environmental
   characteristics, analysis and/or design criteria to be checked
-- Simple output spreadsheets ## Installation
+- Simple output spreadsheets 
+
+Installation
+============
 
 Pre-requisites
 --------------
