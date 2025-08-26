@@ -82,7 +82,8 @@ After installation, you can run a quick check to verify the correct installation
    python test_ALL.py
 
 This runs a demonstration of a series of typical wind turbine analyses and writes results into the ``scube/tests`` folder.
-In the miniforge prompt command window, the following should appear (multiple times, once for each analysis)
+In the miniforge prompt command window, the following should appear (multiple times, once for each analysis).
+N.B. Some WEIS "Warnings" may appear. There are not critical.
 
 .. code:: bash
 
