@@ -7,8 +7,9 @@ Scube manual
 
 Contents
 --------
+
 .. contents::
-   :depth:2
+   :depth: 2
    :local:
 
 Overview
