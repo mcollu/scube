@@ -7,12 +7,9 @@ Scube manual
 
 Contents
 --------
-
-.. toctree::
-
-   usage
-   api
-
+.. contents::
+   :depth:2
+   :local:
 
 Overview
 ========
