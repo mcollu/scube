@@ -75,11 +75,6 @@ After installation, you can run the analyses with the nomenclature Axx
 Ly as (example below for A01 L0).
 
 .. image:: scube_structure_20250807.png
-   :width: 300px
-   :height: 200px
-   :alt: Alternative text
-   :align: center
-
 
 3. Now, open a conda prompt (miniforge prompt, for example), navigate to
    the folder ``scube\tests``
