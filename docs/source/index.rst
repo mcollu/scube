@@ -116,6 +116,8 @@ N.B. Some WEIS "Warnings" may appear. There are not critical.
    
    [INFO] Time taken: 0:00:03
 
+3. Check in the folder scube\tests\output the validation reports created (e.g., validation_report_A03_L2.xlsx)
+
 Main analysis file
 ==================
 
