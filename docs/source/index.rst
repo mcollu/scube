@@ -1,10 +1,6 @@
 Scube manual
 ===================================
 
-**Scube** (/lu'make/) is a Python library to support the design and analysis of towers for floating offshore wind turbines.
-
-Scube hosts its documentation on Read the Docs.
-
 .. note::
 
    This project is under active development.
