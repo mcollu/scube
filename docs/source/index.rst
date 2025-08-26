@@ -4,9 +4,6 @@ Scube manual
 
    This project is under active development.
 
-Contents
---------
-
 .. contents::
 
 Overview
