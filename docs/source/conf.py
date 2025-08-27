@@ -2,13 +2,13 @@
 
 # -- Project information
 
-project = 'Scube manual'
+project = 'Scube'
 copyright = ''
 author = 'Maurizio Collu'
 
-project = ""
-release = ""
-html_title = "Documentation"
+version = ''
+release = ''
+html_title = 'Documentation'
 
 # -- General configuration
 
