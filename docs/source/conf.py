@@ -2,12 +2,13 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Scube manual'
+copyright = ''
+author = 'Maurizio Collu'
 
-release = '0.1'
-version = '0.1.0'
+project = ""
+release = ""
+html_title = "Documentation"
 
 # -- General configuration
 
