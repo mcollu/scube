@@ -124,7 +124,6 @@ Main analysis file
   analysis.
 
 .. code:: yaml
-   # config.yaml
    
    ### INPUT
    reference_turbine_yaml: "data/ref_turbines/IEA-15-240-RWT_VolturnUS-S.yaml" # Reference floating wind turbine to be modified
