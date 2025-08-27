@@ -120,25 +120,33 @@ Main analysis file
 
 *Main analysis file:* ``scube\main.py``
 
-**Sample configuration:**
-
-.. code:: yaml
-
-   structure:
-     height: 120.0        # meters
-     mass: 3e5            # kg
-     damping: 0.03
-   wind:
-     mean_speed: 16       # m/s
-     turbulence_intensity: 0.12
-   simulation:
-     duration: 600        # seconds
-     time_step: 0.1       # seconds
-   output:
-     directory: results/
-
 - Edit ``config.yaml`` with your desired parameters before running the
   analysis.
+
+.. code:: yaml
+   # config.yaml
+   
+   ### INPUT
+   reference_turbine_yaml: "data/ref_turbines/IEA-15-240-RWT_VolturnUS-S.yaml" # Reference floating wind turbine to be modified
+   environment_input:      "data/INPUT_environment.xlsx"
+   tower_geometry_input:   "data/INPUT_tower.xlsx"
+   
+   ### ANALYSIS
+   constraints_xlsx:       "CNSTR.xlsx"
+   
+       # WEIS folder names
+   outputs_subdir:         "outputs"
+   output_dir_base:        "data/weis_analyses"
+   modeling_options_fmt:   "modeling_options_{ANALYSIS}.yaml"
+   analysis_options_fmt:   "analysis_options_{ANALYSIS}.yaml"
+   
+   output_file_xlsx:       "{ANALYSIS}_output.xlsx"
+   output_file_yaml:       "{ANALYSIS}_output.yaml"
+   constraints_sheet_fmt:  "constraints_{ANALYSIS}"
+   
+   ### OUTPUT
+   modified_turbine_yaml:  "output/modified_IEA-15-240-RWT.yaml" # File of the modified floating wind turbine
+   validation_report_folder: "output"
 
 Input Data Format
 =================
