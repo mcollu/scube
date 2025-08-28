@@ -234,6 +234,7 @@ Create new constraint (if not already available)
 Use the new constraint
 ~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~
+
 - Open scube/data/CNSTR.xlsx
 - Go to the constraints_Axy_L0z tab, where you would like to add the constraint
 - Add the constraint:
