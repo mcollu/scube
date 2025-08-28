@@ -240,6 +240,7 @@ Use the new constraint
    - Constraint: click on the drop-down menu arrow, and choose the constraint you just created (Example: "Max_twr_1st_fa_freq")
    - Units: specify the unit of measure in which the constraint value (see next column) is specified
    - Value: give the numerical value of the constraints
+   - Description (optional): provide a description of the constraint
 
 Running and Analysis
 ====================
