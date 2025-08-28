@@ -75,7 +75,7 @@ Getting started
 
 After installation, you can run a quick check to verify the correct installation.
 
-1. Open a conda prompt (miniforge prompt, for example), navigate to the folder ``scube/tests/output``
+1. Open a conda prompt (miniforge prompt, for example), navigate to the folder ``scube/tests/``
 2. Run the following command 
 
 .. code:: bash
