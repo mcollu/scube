@@ -208,7 +208,9 @@ Advanced level
 Introduce new constraints
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A) Create new constraint (if not already available)
+Create new constraint (if not already available)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Open scube/data/CNSTR.xlsx
 - Go to the "LIST" tab
@@ -228,15 +230,14 @@ A) Create new constraint (if not already available)
       - if Which_out is yaml, then the parameter name, in the WEIS  output yaml file, to be checked against the contraint should be specified here, using a *dot notation for nested keys*, also known as *hierarchical (dotted path) notation* (see Appendix)
       - if Which_out is xlsx, then the parameter name, in the WEIS output xlsx file, to be checked against the contraint should be specified here.
       - if Wich_out is scube_fun, then the name of the scube_fun (scube postprocessing function implemented to derived the parameter value to be compared against the constraint) is here specified. <ADD HERE LINK TO SECTION SPECIFYING HOW TO CREATE NEW POSTPROCESSING FUNCTION>
-
-B) Use the new constraint
-- Open scube/data/CNSTR.xlsx
-- Go to the constraints_Axy_L0z tab, where you would like to add the constraint
-- Add the constraint:
-   - ID: add a number after the existing one
-   - Constraint: click on the drop-down menu arrow, and choose the constraint you just created (Example: "Max_twr_1st_fa_freq")
-   - Units: specify the unit of measure in which the constraint value (see next column) is specified
-   - Value: give the numerical value of the constraints
+- Use the new constraint
+   - Open scube/data/CNSTR.xlsx
+   - Go to the constraints_Axy_L0z tab, where you would like to add the constraint
+   - Add the constraint:
+      - ID: add a number after the existing one
+      - Constraint: click on the drop-down menu arrow, and choose the constraint you just created (Example: "Max_twr_1st_fa_freq")
+      - Units: specify the unit of measure in which the constraint value (see next column) is specified
+      - Value: give the numerical value of the constraints
 
 Running and Analysis
 ====================
