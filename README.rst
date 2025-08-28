@@ -1,9 +1,8 @@
-Template for the Read the Docs tutorial
-=======================================
+Red the Docs repository for scube
+=================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+This GitHub repository is for the scube readthedocs manual.
 
-Read the tutorial here:
+The readthedocs page is available `here <https://scube-manual.readthedocs.io/en/latest/>`_ .
 
-https://docs.readthedocs.io/en/stable/tutorial/
+If you want to signal a bug, a feature request, or anything else, please clikc on "New issue" `here <>`_ .
