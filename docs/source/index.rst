@@ -120,6 +120,10 @@ Main analysis file
 
 *Main analysis file:* ``scube\main.py``
 
+.. _sec_config:
+Configuration file
+------------------
+
 - Edit ``config.yaml`` with your desired parameters before running the
   analysis.
 
@@ -198,6 +202,28 @@ If you want to use the pre-set wind turbine and support structure (IEA15MW UMain
 
 *NB Note the slight difference in user_group: the “-” in front means that this is an indipendent series of values, while the absence of the “-” in front means that these values are coupled with the previous series of values with the “-”.* *For example, in this case, 9 simulations will be carried out: 3 wave directions, due to “- wave_dir”, times 3 nacelle directions, due to “nace_dir”. The wind propagation direction, “pro_dir”, is coupled with the nacelle direction, i.e., for nace_dir = -90, the prop_dir is automatically 90, for nace_dir = 0, the prop_dir is automatically 0, and so on.*
 
+Advanced level
+--------------
+
+Introduce new constraint
+~~~~~~~~~~~~~~~~~~~~~~~~
+- Open scube/data/CNSTR.xlsx
+- Go to the "LIST" tab
+- Add a line for the new constraint, with the following columns:
+   - Constraint: give a name to the constraint (please double check the nomenclature used)
+   - Type:
+      - Min: if the value to be checked should be higher than the value specified
+      - Eq: if the value to be checked should be equal
+      - Max: if the value to be checked should be lower than the value specified
+      - Check: for some constraints, it is not possible to specificy a numercial value (e.g., local buckling check)
+   - Which_out. This is to specify where the value to be compared against the contraint is:
+      - yaml, if it is in the WEIS yaml output file (see file output_file_yaml in :ref:`sec_config`)
+      - xlsx, if it is in the WEIS xlsx output file (see file output_file_xlsx in :ref:`sec_config`)
+      - derived, if the output is not calculated by WEIS, but need to be calculated through postprocessing
+   - WEIS_out_yaml_param, WEIS_out_xlsx, scube_fun:
+      - if Which_out is yaml, then the parsameter to be checked against the contraint should be specified here, using a *dot notation for nested keys*, also known as *hierarchical (dotted path) notation* (see Appendix)
+      - if Which_out is yaml, then the parsameter to be checked against the contraint should be specified here
+
 Running and Analysis
 ====================
 
@@ -230,3 +256,16 @@ Contact & Support
 - **Issues/Bugs:** Please file issues via email (support available until
   October 2025)
 - **License:** See TIC LCPE agreement terms
+
+Appendix
+========
+D
+-
+
+dot notation for nested keys
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+H
+-
+
+- **hierarchical (dotted path) notation**: see **dot notation for nested keys**
