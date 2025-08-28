@@ -268,8 +268,9 @@ Outputs
 FAQ
 ===
 
-**Q: Can I ….?** 
-A: Yes, … 
+**Q**: Can I ….?
+
+**A**: Yes, … 
 
 Contact & Support
 =================
