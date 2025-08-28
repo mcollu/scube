@@ -209,6 +209,7 @@ Introduce new constraints
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A) Create new constraint (if not already available)
+
 - Open scube/data/CNSTR.xlsx
 - Go to the "LIST" tab
 - Add a line for the new constraint, with the following columns:
