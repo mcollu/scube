@@ -11,20 +11,14 @@ Overview
 
 **Project Name:** SCUBE **Version:** X.X
 
-SCUBE is a Python package for simulating and analysing wind turbine
-structural responses in offshore conditions. Developed at the University
-of Strathclyde for Scottish Power and SSE Renewables, in the TIC-LCPE
-project “Wind-19 Stiff-stiff tower for FOWT: development of a design and
-benchmarking tool”, between January and October 2025.
+SCUBE is a Python package for simulating and analysing wind turbine structural responses in offshore conditions.
+It has been developed at the University of Strathclyde for Scottish Power and SSE Renewables, in the TIC-LCPE project “Wind-19 Stiff-stiff tower for FOWT: development of a design and benchmarking tool”, between January and October 2025.
 
 **Key Features:**
 
-- It leverages the capabilities of the software WEIS by NREL
-  `Link <https://weis.readthedocs.io/en/latest/>`__
-- Can be used to benchmark a given offshore wind turbine tower design,
-  or to support its design
-- Simple input spreadsheets for: tower characteristics, environmental
-  characteristics, analysis and/or design criteria to be checked
+- It leverages the capabilities of the software WEIS by NREL `Link <https://weis.readthedocs.io/en/latest/>`__
+- Can be used to benchmark a given offshore wind turbine tower design, or to support its design
+- Simple input spreadsheets for: tower characteristics, environmental characteristics, analysis and/or design criteria to be checked
 - Simple output spreadsheets 
 
 Installation
@@ -35,22 +29,21 @@ Pre-requisites
 
 Requires the installation of WEIS by NREL. Info on how to install it `here <https://weis.readthedocs.io/en/latest/installation.html>`__\ *.*
 
-It is recommended to use miniforge to create conda environments and install WEIS. Miniforge can be obtained here <https://github.com/conda-forge/miniforge>`__ *In the following,
-it is assumed that you named ``weis-env`` the WEIS environment where to
-run SCUBE.*
+It is recommended to use miniforge to create conda environments and install WEIS. Miniforge can be obtained here <https://github.com/conda-forge/miniforge>`__
+
+.. note::
+   
+   In the following, it is assumed that you named ``weis-env`` the WEIS environment where to run SCUBE.
 
 Installation instructions
 -------------------------
 
 1. Make sure to have the zip file “scube.zip” provided
 2. Expand the file in the desired place in your disk
-3. Open a conda command prompt (*if you are using miniforge, use the
-   Miniforge Prompt*)
-4. Make sure to activate the conda environment you have created to run
-   WEIS and SCUBE (``e.g., weis-env``)
+3. Open a conda command prompt (*if you are using miniforge, use the Miniforge Prompt*)
+4. Make sure to activate the conda environment you have created to run WEIS and SCUBE (``e.g., weis-env``)
 5. Navigate, within the command prompt, to the folder ``scube\dist``
-6. Install the latest version of the SCUBE .whl file that you can find
-   in that folder. For example, for SCUBE v1.0.0
+6. Install the latest version of the SCUBE .whl file that you can find in that folder. For example, for SCUBE v1.0.0
 
 .. code:: bash
 
@@ -58,12 +51,13 @@ Installation instructions
 
 This should install all the SCUBE scripts and all the required packages.
 
-*N.B. If you have installed a previous version of SCUBE, make sure to
-uninstall that first, and then install the new version of SCUBE:*
+.. note::
 
-.. code:: bash
+   If you have installed a previous version of SCUBE, make sure to uninstall that first, and then install the new version of SCUBE, with the follwoing command
 
-   pip uninstall scube
+   .. code:: bash
+   
+      pip uninstall scube
 
 Getting started
 ===============
