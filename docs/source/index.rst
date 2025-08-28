@@ -221,8 +221,9 @@ Introduce new constraint
       - xlsx, if it is in the WEIS xlsx output file (see file output_file_xlsx in :ref:`sec_config`)
       - derived, if the output is not calculated by WEIS, but need to be calculated through postprocessing
    - WEIS_out_yaml_param, WEIS_out_xlsx, scube_fun:
-      - if Which_out is yaml, then the parsameter to be checked against the contraint should be specified here, using a *dot notation for nested keys*, also known as *hierarchical (dotted path) notation* (see Appendix)
-      - if Which_out is yaml, then the parsameter to be checked against the contraint should be specified here
+      - if Which_out is yaml, then the parameter name, in the WEIS  output yaml file, to be checked against the contraint should be specified here, using a *dot notation for nested keys*, also known as *hierarchical (dotted path) notation* (see Appendix)
+      - if Which_out is xlsx, then the parameter name, in the WEIS output xlsx file, to be checked against the contraint should be specified here.
+      - if Wich_out is scube_fun, then the name of the scube_fun (scube postprocessing function implemented to derived the parameter value to be compared against the constraint) is here specified.
 
 Running and Analysis
 ====================
