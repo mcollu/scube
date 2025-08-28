@@ -198,11 +198,11 @@ If you want to use the pre-set wind turbine and support structure (IEA15MW UMain
 Advanced level
 --------------
 
-Introduce new constraints
-~~~~~~~~~~~~~~~~~~~~~~~~~
+   Introduce new constraints
+   ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create new constraint (if not already available)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      Create new constraint (if not already available)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Open scube/data/CNSTR.xlsx
 - Go to the "LIST" tab
