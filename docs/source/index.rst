@@ -53,7 +53,7 @@ This should install all the SCUBE scripts and all the required packages.
 
 .. note::
 
-   If you have installed a previous version of SCUBE, make sure to uninstall that first, and then install the new version of SCUBE, with the follwoing command
+   If you have installed a previous version of SCUBE, make sure to uninstall that first, and then install the new version of SCUBE, with the following command
 
    .. code:: bash
    
@@ -64,8 +64,7 @@ Getting started
 
 After installation, you can run a quick check to verify the correct installation.
 
-1. Open a conda prompt (miniforge prompt, for example), navigate to
-   the folder ``scube/tests/output``
+1. Open a conda prompt (miniforge prompt, for example), navigate to the folder ``scube/tests/output``
 2. Run the following command 
 
 .. code:: bash
@@ -112,7 +111,7 @@ N.B. Some WEIS "Warnings" may appear. There are not critical.
 Main analysis file
 ==================
 
-*Main analysis file:* ``scube\main.py``
+Main analysis file: ``scube\main.py``
 
 .. _sec_config:
 Configuration file
