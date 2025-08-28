@@ -27,9 +27,9 @@ Installation
 Pre-requisites
 --------------
 
-Requires the installation of WEIS by NREL. Info on how to install it `here <https://weis.readthedocs.io/en/latest/installation.html>`__\ *.*
+Requires the installation of WEIS by NREL. Info on how to install it `here <https://weis.readthedocs.io/en/latest/installation.html>`_
 
-It is recommended to use miniforge to create conda environments and install WEIS. Miniforge can be obtained here <https://github.com/conda-forge/miniforge>`__
+It is recommended to use miniforge to create conda environments and install WEIS. Miniforge can be obtained `here <https://github.com/conda-forge/miniforge>`_
 
 .. note::
    
