@@ -253,12 +253,12 @@ Running an Analysis
 2. Activate the WEIS conda environment, for example:
 .. code:: bash
    conda activate weis-env
-3. Navigate to the ``scube\test`` folder
+3. Navigate to the ``scube`` folder
 4. Launch the analysis with the following command:
 
 .. code:: bash
 
-   python test_serial.py A01 L1
+   python main.py A01 L1
 
 Outputs
 =======
