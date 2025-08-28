@@ -9,7 +9,7 @@ Scube manual
 Overview
 ========
 
-**Project Name:** SCUBE **Version:** 1.0.0
+**Project Name:** SCUBE **Version:** X.X
 
 SCUBE is a Python package for simulating and analysing wind turbine
 structural responses in offshore conditions. Developed at the University
