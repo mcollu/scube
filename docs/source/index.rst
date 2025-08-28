@@ -13,6 +13,9 @@ Scube manual
 
    installation
    getting_started
+   configuration_file
+   input_data
+   
    
 Overview
 ========
