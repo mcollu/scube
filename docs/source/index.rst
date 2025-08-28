@@ -6,6 +6,13 @@ Scube manual
 
 .. contents::
 
+
+.. toctree::
+   :maxdepth: 3
+
+   installation
+   getting_started
+   
 Overview
 ========
 
