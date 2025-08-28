@@ -4,11 +4,11 @@ Scube manual
 
    This project is under active development.
 
+.. contents::
+
+
 ..
-   contents::
-
-
-.. toctree::
+   toctree::
    :maxdepth: 3
 
    installation
