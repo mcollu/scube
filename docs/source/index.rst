@@ -4,7 +4,8 @@ Scube manual
 
    This project is under active development.
 
-.. contents::
+..
+   contents::
 
 
 .. toctree::
