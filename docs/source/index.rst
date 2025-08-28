@@ -235,11 +235,13 @@ Use the new constraint
    - Value: give the numerical value of the constraints
    - Description (optional): provide a description of the constraint
 
-Running and Analysis
+Running an Analysis
 ====================
 
 1. Open a conda prompt
 2. Activate the WEIS conda environment, for example:
+.. code:: bash
+   conda activate weis-env
 3. Navigate to the ``scube\test`` folder
 4. Launch the analysis with the following command:
 
