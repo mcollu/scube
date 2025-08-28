@@ -209,8 +209,7 @@ Introduce new constraints
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create new constraint (if not already available)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Open scube/data/CNSTR.xlsx
 - Go to the "LIST" tab
@@ -232,8 +231,7 @@ Create new constraint (if not already available)
       - if Wich_out is scube_fun, then the name of the scube_fun (scube postprocessing function implemented to derived the parameter value to be compared against the constraint) is here specified. <ADD HERE LINK TO SECTION SPECIFYING HOW TO CREATE NEW POSTPROCESSING FUNCTION>
 
 Use the new constraint
-~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 - Open scube/data/CNSTR.xlsx
 - Go to the constraints_Axy_L0z tab, where you would like to add the constraint
