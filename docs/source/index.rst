@@ -6,10 +6,10 @@ Scube manual
 
 .. contents::
 
-.. 
-   toctree::
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
    
-   :maxdepth: 3
    sec_how_scube_works
    sec_installation
    sec_running_scube
