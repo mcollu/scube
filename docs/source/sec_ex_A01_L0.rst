@@ -33,6 +33,16 @@ Introduction
 
 Prepare the input file
 ----------------------
+The SCUBE input data can be found in ``scube\data``.
+
+Tower
+~~~~~
+- Open the file ``INPUT_tower.xlsx``
+- Familiarise yourself with the variables, explained in the ``legend`` sheet
+- Specify the geometry of the cans in the ``geometry`` sheet
+- Specify the aerodynamic drag properties of the tower in the ``drag`` sheet (if unsure, leave the default values, they can be applied to a wide range of dimensions)
+- Specify the tower material characteristics in the ``material`` sheet (the default values are for the steel	ASTM A572 Grade 50, see more `here	<http://www.matweb.com/search/DataSheet.aspx?MatGUID=9ced5dc901c54bd1aef19403d0385d7f>`_
+
 
 Run the analysis
 ----------------
