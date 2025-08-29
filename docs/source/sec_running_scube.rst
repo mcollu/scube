@@ -12,8 +12,7 @@ How do you run an analysis with SCUBE?
 .. code:: bash
   `python main.py A01 L01'
 
-Configuration file \config.yaml
--------------------------------
+
 .. _sec_config:
 Configuration file
 ------------------
