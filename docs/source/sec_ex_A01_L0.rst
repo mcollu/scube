@@ -16,9 +16,9 @@ Introduction
 +---+------------------+------+-----------------+---------------------------------------------------------------------+
 | 4 | Max_twr_slope    | deg  | 4.00^^          | Structural integrity. Each can cannot have a slope higher than this |
 +---+------------------+------+-----------------+---------------------------------------------------------------------+
-| 5 | Min_twr_d_to_t   | N/A    | 80^^?           | Manufacturability. Min tower outer diameter to thickness ratio      |
+| 5 | Min_twr_d_to_t   | N/A  | 80^^?           | Manufacturability. Min tower outer diameter to thickness ratio      |
 +---+------------------+------+-----------------+---------------------------------------------------------------------+
-| 6 | Max_twr_d_to_t   | N/A    | 150^^?          | Manufacturability. Max tower outer diameter to thickness ratio      |
+| 6 | Max_twr_d_to_t   | N/A  | 150^^?          | Manufacturability. Max tower outer diameter to thickness ratio      |
 +---+------------------+------+-----------------+---------------------------------------------------------------------+
 
 
