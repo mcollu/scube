@@ -4,7 +4,10 @@ Scube manual
 
    This project is under active development.
 
-.. toctree::
+.. contents::
+
+.. 
+   toctree::
    
    :maxdepth: 3
    sec_how_scube_works
