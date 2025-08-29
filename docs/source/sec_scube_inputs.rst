@@ -10,6 +10,8 @@ If you want to use the pre-set wind turbine and support structure (IEA15MW UMain
 - Environmental conditions: ``scube\data\sample_INPUT_environment.xlsx``
 - Tower check criteria: ``scube\data\sample_CNSTR.xlsx``
 
+Each of this spreadsheet file as a "legend" sheet, with explanations.
+
 Medium level
 ------------
 If you want to use the pre-set wind turbine and support structure (IEA15MW UMaine semisub), but change the metocean combinations for DLC1.2, DLC1.6, DLC6.1:
