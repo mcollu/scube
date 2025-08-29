@@ -139,4 +139,5 @@ Permission error
   PermissionError: [Errno 13] Permission denied: 'data/INPUT_tower.xlsx'
 
 The file ``INPUT_tower.xlsx`` is still open on your pc. In order to be safely read by SCUBE, the file needs to be closed.
+
 A similar error can occur for ``CNSTR.xlsx``
