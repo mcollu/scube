@@ -11,11 +11,15 @@ Scube manual
    toctree::
    :maxdepth: 3
 
-   installation
-   getting_started
-   configuration_file
-   input_data
-   
+   sec_how_scube_works
+   sec_installation
+   sec_running_scube
+   sec_scube_inputs
+   sec_scube_analyses
+   sec_scube_outputs
+   sec_scube_examples
+   sec_FAQ
+   sec_contact_and_support
    
 Overview
 ========
