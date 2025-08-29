@@ -61,9 +61,80 @@ Run the analysis
 .. code:: bash
   conda activate weis-env
 - Navigate to the root folder `scube'
-- Launch the analysis Axy Lz with the following command
+- Launch the analysis with the following command
 .. code:: bash
-  `python main.py A01 L1'
+  `python main.py A01 L0'
+
+Expected conda prompt outcome
+-----------------------------
+If all goes well, you should see something similar to the following.
+
+.. code:: bash
+  Using weis.aeroelasticse in rosco.toolbox...
+
+   ******* SCUBE: preprocessing - updating tower geometry *******
+  
+   ******* SCUBE: processing - WEIS analysis *******
+  RuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\utilization_dnvgl.py:322
+  The number of calls to function has reached maxfev = 50.RuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\cylinder_member.py:513
+  divide by zero encountered in scalar divideRuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\cylinder_member.py:514
+  divide by zero encountered in scalar divide----------------
+  Design Variables
+  ----------------
+  name  val  size  lower  upper
+  ----  ---  ----  -----  -----
+  
+  -----------
+  Constraints
+  -----------
+  name  val  size  lower  upper  equals
+  ----  ---  ----  -----  -----  ------
+  
+  ----------
+  Objectives
+  ----------
+  name  val  size
+  ----  ---  ----
+  
+  Run time (A01_L0): 11.173307180404663
+  
+   ******* SCUBE: postprocessing - results VS constraints analysis *******
+  UserWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\openpyxl\worksheet\_read_only.py:85
+  Data Validation extension is not supported and will be removed
+           ******* Constraint definitions imported *******
+  
+           ******* Simulation output xlsx and yaml files data loaded *******
+  
+           ******* Constraint verification started *******
+  
+                   Check of constraint Min_twr_d_to_t
+  
+                   Check of constraint Max_twr_d_to_t
+  
+                   Check of constraint Max_twr_OD
+  
+                   Check of constraint Eq_twr_top_OD
+  
+                   Check of constraint Eq_twr_top_thick
+  
+                   Check of constraint Max_twr_slope
+  
+           ******* Constraint verification completed *******
+  
+   ******* SCUBE: Validation report with formatting exported successfully *******
+  
+  [INFO] Time taken: 0:00:13
 
 Interpret the output file (validation report)
 ---------------------------------------------
+
+Common errors
+-------------
+
+Permission error
+~~~~~~~~~~~~~~~~
+.. code:: bash
+  PermissionError: [Errno 13] Permission denied: 'data/INPUT_tower.xlsx'
+
+The file ``INPUT_tower.xlsx`` is still open on your pc. In order to be safely read by SCUBE, the file needs to be closed.
+A similar error can occur for ``CNSTR.xlsx``
