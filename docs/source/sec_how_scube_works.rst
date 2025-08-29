@@ -7,10 +7,10 @@ It has been developed by the University of Strathclyde for Scottish Power and SS
 
 **Key Features:**
 
-- It leverages the capabilities of the software WEIS by NREL `Link <https://weis.readthedocs.io/en/latest/>`__
-- Can be used to benchmark a given offshore wind turbine tower design, or to support its design
+- It leverages the capabilities of the software `WEIS <https://weis.readthedocs.io/en/latest/>`_ by NREL
+- Can be used to benchmark a given offshore wind turbine tower design, or to support its preliminary design
 - Simple input spreadsheets for: tower characteristics, environmental characteristics, analysis and/or design criteria to be checked
-- Simple input/output spreadsheets 
+- Simple output spreadsheets 
 
 How does it work?
 =================
