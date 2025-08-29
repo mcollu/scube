@@ -4,7 +4,7 @@ Scube manual
 
    This project is under active development.
 
-.. contents::
+
 
 .. toctree::
    :maxdepth: 2
@@ -19,6 +19,9 @@ Scube manual
    sec_scube_examples
    sec_FAQ
    sec_contact_and_support
+
+
+.. contents::
    
 Overview
 ========
