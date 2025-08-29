@@ -70,6 +70,7 @@ Expected conda prompt outcome
 If all goes well, you should see something similar to the following.
 
 .. code:: bash
+  
   Using weis.aeroelasticse in rosco.toolbox...
 
    ******* SCUBE: preprocessing - updating tower geometry *******
