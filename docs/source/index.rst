@@ -8,8 +8,8 @@ Scube manual
 
 
 .. toctree::
+   
    :maxdepth: 3
-
    sec_how_scube_works
    sec_installation
    sec_running_scube
