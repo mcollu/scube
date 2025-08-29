@@ -17,24 +17,6 @@ Scube manual
    sec_scube_examples
    sec_FAQ
    sec_contact_and_support
-   
-
-
-
-
-Running an Analysis
-====================
-
-1. Open a conda prompt
-2. Activate the WEIS conda environment, for example:
-.. code:: bash
-   conda activate weis-env
-3. Navigate to the ``scube`` folder
-4. Launch the analysis with the following command:
-
-.. code:: bash
-
-   python main.py A01 L1
 
 Outputs
 =======
