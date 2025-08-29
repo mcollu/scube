@@ -128,6 +128,19 @@ If all goes well, you should see something similar to the following.
 
 Interpret the output file (validation report)
 ---------------------------------------------
+If run successfully, the file ``validation_report_A01_L0.xlsx`` should have been created in the folder ``scube\output``.
+
+.. note::
+
+  NB If the file already existed, it will be overwritten.
+
+In this spreadsheet, you should see a "Constraint Checks" sheet, in which the results of the validation are reported.
+An example is given in the following figure.
+
+.. note::
+  When a constraint need to be verified for each can specified in ``INPUT_tower.xlsx``, the constraint is repeated *n* times, where *n" is the number of the cans/sections.
+
+
 
 Common errors
 -------------
