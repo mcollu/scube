@@ -1,5 +1,5 @@
-Input Data Format
-=================
+SCUBE Inputs
+============
 
 Basic level
 -----------
