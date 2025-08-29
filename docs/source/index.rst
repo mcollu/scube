@@ -273,14 +273,6 @@ Outputs
   - For example, if you have run the analysis A01 L1, then the output
     spreadsheet name is: ``validation_report_A01_L0.xlsx``
 
-
-FAQ
-===
-
-**Q**: Can I ….?
-
-**A**: Yes, … 
-
 Contact & Support
 =================
 
