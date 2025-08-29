@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'Scube'
-copyright = ''
+copyright = 'University of Strathclyde'
 author = 'Maurizio Collu'
 
 version = ''
