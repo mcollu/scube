@@ -1,5 +1,5 @@
-Outputs
-=======
+SCUBE Outputs
+=============
 
 - **Summary report**
 
