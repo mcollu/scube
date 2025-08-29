@@ -56,6 +56,14 @@ Tower
 
 Run the analysis
 ----------------
+- Open a miniforge/miniconda/conda terminal prompt
+- Activate the WEIS environment you set up (see :ref:`sec_installation`)
+.. code:: bash
+  conda activate weis-env
+- Navigate to the root folder `scube'
+- Launch the analysis Axy Lz with the following command
+.. code:: bash
+  `python main.py A01 L1'
 
 Interpret the output file (validation report)
 ---------------------------------------------
