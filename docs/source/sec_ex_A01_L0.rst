@@ -3,8 +3,14 @@ Analysis A01 L0: Tower geometrical characteristics check
 
 Introduction
 ------------
-- Aim: to verify that the geometrical characteristics of the tower are compatible against a series of simple geometrical checks
-- Constraints (to be specified in CNSTR.xlsx)
+Aim
+~~~
+To verify that the geometrical characteristics of the tower are compatible against a series of simple geometrical checks
+
+Constraints
+~~~~~~~~~~~
+To be specified in CNSTR.xlsx
+
 +---+------------------+------+-----------------+---------------------------------------------------------------------+
 | # | Constraint name  | Unit | Suggested value | Description                                                         |
 +===+==================+======+=================+=====================================================================+
@@ -30,6 +36,10 @@ Introduction
 | ^^    | Value agreed in WIND-14 STIFF-STIFF TOWER DESIGN FOR FLOATING WIND TURBINES (Previous TIC LCPE project)                                                                         |
 +-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+Methodology
+~~~~~~~~~~~
+The values of the parameters, read from the WEIS output files, are compared against the constraint values.
+No postprocessing of the WEIS output necessary.
 
 Prepare the input file
 ----------------------
