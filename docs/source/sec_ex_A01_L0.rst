@@ -140,6 +140,11 @@ An example is given in the following figure.
 .. note::
   When a constraint need to be verified for each can specified in ``INPUT_tower.xlsx``, the constraint is repeated *n* times, where *n" is the number of the cans/sections.
 
+.. figure:: figs/scube_A01_L0_validation_report.jpg
+   :align: center
+   :alt: Validation report spreadsheet
+
+   Analysis validation report example
 
 
 Common errors
