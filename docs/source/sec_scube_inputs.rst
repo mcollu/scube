@@ -54,7 +54,7 @@ This is a ``.yaml`` file. You can change the DLC settings in the section (exampl
            yaw_misalign: [0]
 
 .. note::
-   Note the slight difference in user_group: the “-” in front means that this is an indipendent series of values, while the absence of the “-” in front means that these values are coupled with the previous series of values with the “-”.
+   Note the slight difference in ``user_group:``: the “-” in front means that this is an indipendent series of values, while the absence of the “-” in front means that these values are coupled with the previous series of values with the “-”.
    
    For example, in this case, 9 simulations will be carried out: 3 wave directions, due to “- wave_dir”, times 3 nacelle directions, due to “nace_dir”. The wind propagation direction, “pro_dir”, is coupled with the nacelle direction, i.e., for nace_dir = -90, the prop_dir is automatically 90, for nace_dir = 0, the prop_dir is automatically 0, and so on.
 
