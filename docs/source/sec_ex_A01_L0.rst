@@ -1,4 +1,4 @@
-Analysis A01 L0: Tower geometrical characteristics check
+Analysis A01 L0: tower geometrical characteristics check
 ========================================================
 
 Introduction
