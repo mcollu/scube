@@ -66,11 +66,17 @@ Run the analysis
 ~~~~~~~~~~~~~~~~
 - Open a miniforge/miniconda/conda terminal prompt
 - Activate the WEIS environment you set up (see :ref:`sec_installation`)
+
 .. code:: bash
+
   conda activate weis-env
+
 - Navigate to the root folder `scube'
+
 - Launch the analysis with the following command
+
 .. code:: bash
+
   `python main.py A01 L0'
 
 Expected conda prompt outcome
