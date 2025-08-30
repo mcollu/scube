@@ -65,7 +65,18 @@ Not implemented.
 
 Level 2 (L2)
 ^^^^^^^^^^^^
+OpenFAST is utilised to derive this parameter, adopting the following settings:
 
+- Wind
+   - Speed: rated wind speed
+   - Direction: 5 directions, 0:30:120
+- Waves: no waves
+- Currents: no currents
+- Wind turbine: operational
+- Simulation:
+   - Analysis time: 600 seconds
+
+SCUBE postprocessing extracts the last 60s of the roll (``PtfmRoll``) and pitch (``PtfmPitch``) OpenFAST output signals, derive the total tilt angle (square root of sum of squares), and then calculates its average, which is then compared against the average specified in the constraint file.
 
 Perform the analysis
 --------------------
@@ -101,85 +112,19 @@ Run the analysis
 
   python main.py A01 L0
 
+or
+
+.. code:: bash
+
+  python main.py A01 L2
+
 Expected conda prompt outcome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If all goes well, you should see something similar to the following.
 
 .. code:: bash
   
-  Using weis.aeroelasticse in rosco.toolbox...
-
-   ******* SCUBE: preprocessing - updating tower geometry *******
-  
-   ******* SCUBE: processing - WEIS analysis *******
-  RuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\utilization_dnvgl.py:322
-  The number of calls to function has reached maxfev = 50.RuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\cylinder_member.py:513
-  divide by zero encountered in scalar divideRuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\cylinder_member.py:514
-  divide by zero encountered in scalar divide----------------
-  Design Variables
-  ----------------
-  name  val  size  lower  upper
-  ----  ---  ----  -----  -----
-  
-  -----------
-  Constraints
-  -----------
-  name  val  size  lower  upper  equals
-  ----  ---  ----  -----  -----  ------
-  
-  ----------
-  Objectives
-  ----------
-  name  val  size
-  ----  ---  ----
-  
-  Run time (A01_L0): 11.173307180404663
-  
-   ******* SCUBE: postprocessing - results VS constraints analysis *******
-  UserWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\openpyxl\worksheet\_read_only.py:85
-  Data Validation extension is not supported and will be removed
-           ******* Constraint definitions imported *******
-  
-           ******* Simulation output xlsx and yaml files data loaded *******
-  
-           ******* Constraint verification started *******
-  
-                   Check of constraint Min_twr_d_to_t
-  
-                   Check of constraint Max_twr_d_to_t
-  
-                   Check of constraint Max_twr_OD
-  
-                   Check of constraint Eq_twr_top_OD
-  
-                   Check of constraint Eq_twr_top_thick
-  
-                   Check of constraint Max_twr_slope
-  
-           ******* Constraint verification completed *******
-  
-   ******* SCUBE: Validation report with formatting exported successfully *******
-  
-  [INFO] Time taken: 0:00:13
-
-Interpret the output file (validation report)
----------------------------------------------
-If run successfully, the file ``validation_report_A01_L0.xlsx`` should have been created in the folder ``scube\output``.
-
-.. note::
-  NB If the file already existed, it will be overwritten.
-
-In this spreadsheet, you should see a "Constraint Checks" sheet, in which the results of the validation are reported.
-An example is given in the following figure.
-
-.. note::
-  When a constraint need to be verified for each can specified in ``INPUT_tower.xlsx``, the constraint is repeated *n* times, where *n* is the number of the cans/sections.
-
-.. figure:: figs/scube_A01_L0_validation_report.jpg
-   :align: center
-   :alt: Validation report spreadsheet
-
-   Analysis validation report example
+  <to insert>
 
 
 Common errors
