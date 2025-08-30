@@ -12,7 +12,7 @@ How do you run an analysis with SCUBE?
 - Launch the analysis Axy Lz with the following command
 .. code:: bash
 
-  `python main.py A01 L1'
+  python main.py A01 L1
 
 .. _sec_config:
 Configuration file
