@@ -38,6 +38,11 @@ To be specified in CNSTR.xlsx
 
 Methodology
 ~~~~~~~~~~~
+
+Level 0 (L0)
+~~~~~~~~~~~~
+~~~~~~~~~~~~
+
 The values of the parameters, read from the WEIS output files, are compared against the constraint values.
 No postprocessing of the WEIS output necessary.
 
