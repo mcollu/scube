@@ -1,8 +1,8 @@
 SCUBE Outputs
 =============
 
-Summary report
---------------
+Validation report
+-----------------
 
 - Validation reports are available in the folder ``scube/output`` (once the relevant analysis has been run)
 - The naming convention is: ``validation_report_Axx_Ly.xlsx``.
