@@ -47,6 +47,8 @@ where
    F_B            & N   & Buoyancy force (at rest) \\
    GM_pitch       & m   % Metacentric height around for a rotation around the y axis \\
 
+.. math:: \psi(r) = e^{-2r}
+
 Level 1 (L1)
 ^^^^^^^^^^^^
 Not implemented.
