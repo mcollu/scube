@@ -20,7 +20,9 @@ Wrapper
 SCUBE is, essentially, a wrapper.
 
 A wrapper is a script/package that serves as an intermediary for running other software, commands, or scripts, often adding additional setup, input adaptation, or error handling without modifying the underlying tool.
+
 In this case, SCUBE is a wrapper of the `NREL software WEIS <https://weis.readthedocs.io/en/latest/index.html>`_.
+
 Why a wrapper? maine advantages are:
 - Simplification: Hides complex command-line options or repeated setup steps from users.
 - Pre-/Post-processing: Performs tasks before or after the main program runs, such as logging, data preparation, or cleanup.
