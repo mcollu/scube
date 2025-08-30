@@ -29,9 +29,6 @@ Why a wrapper? maine advantages are:
 SCUBE data flow diagram
 -----------------------
 .. image:: figs/fig_scube_DFD.jpg
-   :width: 400px
-   :height: 200px
-   :alt: Description of the image
    :align: center
 
 
