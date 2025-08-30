@@ -77,7 +77,7 @@ Run the analysis
 
 .. code:: bash
 
-  `python main.py A01 L0'
+  python main.py A01 L0
 
 Expected conda prompt outcome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
