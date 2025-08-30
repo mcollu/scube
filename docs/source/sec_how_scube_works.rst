@@ -24,6 +24,7 @@ A wrapper is a script/package that serves as an intermediary for running other s
 In this case, SCUBE is a wrapper of the `NREL software WEIS <https://weis.readthedocs.io/en/latest/index.html>`_.
 
 Why a wrapper? maine advantages are:
+
 - Simplification: Hides complex command-line options or repeated setup steps from users.
 - Pre-/Post-processing: Performs tasks before or after the main program runs, such as logging, data preparation, or cleanup.
 - Adaptation: Passes user input to underlying tools after converting it to an acceptable format, improving compatibility and usability.
