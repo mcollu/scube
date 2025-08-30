@@ -26,9 +26,9 @@ Why a wrapper? maine advantages are:
 - Pre-/Post-processing: Performs tasks before or after the main program runs, such as logging, data preparation, or cleanup.
 - Adaptation: Passes user input to underlying tools after converting it to an acceptable format, improving compatibility and usability.
 
-SCUBE flowchart
----------------
-.. image:: path/to/image.png
+SCUBE data flow diagram
+-----------------------
+.. image:: figs/fig_scube_DFD.jpg
    :width: 400px
    :height: 200px
    :alt: Description of the image
