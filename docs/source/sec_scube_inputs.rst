@@ -7,18 +7,24 @@ Basic level
 If you want to use the pre-set wind turbine and support structure (IEA15MW UMaine semisub), and the pre-set metocean combinations for DLC1.2, DLC1.6, DLC6.1:
 
 - Tower geometry and material: ``scube\data\sample_INPUT_tower.xlsx``
-- Environmental conditions: ``scube\data\sample_INPUT_environment.xlsx``
 - Tower check criteria: ``scube\data\sample_CNSTR.xlsx``
+
+If you are running an analysis of level 3 (L3), then you may want to modify the metocean conditions for your specific siteL
+
+- Environmental conditions: ``scube\data\sample_INPUT_environment.xlsx``
 
 Each of this spreadsheet file as a "legend" sheet, with explanations.
 
 Medium level
 ------------
-If you want to use the pre-set wind turbine and support structure (IEA15MW UMaine semisub), but change the metocean combinations for DLC1.2, DLC1.6, DLC6.1:
+If you want to use the pre-set wind turbine and support structure (IEA15MW UMaine semisub), but change the metocean combinations for DLC1.2, DLC1.6, DLC6.1, first of all modify as desired the basic set of inputs:
 
 - Tower geometry and material: ``scube\data\sample_INPUT_tower.xlsx``
 - Environmental conditions: ``scube\data\sample_INPUT_environment.xlsx``
 - Tower check criteria: ``scube\data\sample_CNSTR.xlsx``
+
+Then:
+
 - DLC metocean combinations (please refer to `WEIS manual <https://weis.readthedocs.io/en/latest/dlc_generator.html>`__ for detailed explanation on these parameters):
 
   - For analysis Axx Ly, open the file\ ``scube\data\weis_analyses\Axx_Ly\modeling_options_A10_L3.yaml``
