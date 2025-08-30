@@ -47,6 +47,12 @@ where
    F_B            & N   & Buoyancy force (at rest) \\
    GM_pitch       & m   % Metacentric height around for a rotation around the y axis \\
 
+.. math::
+   (\mathcal{F}f)(y)
+    = \frac{1}{\sqrt{2\pi}^{\ n}}
+      \int_{\mathbb{R}^n} f(x)\,
+      e^{-\mathrm{i} y \cdot x} \,\mathrm{d} x.
+
 Level 1 (L1)
 ^^^^^^^^^^^^
 Not implemented.
