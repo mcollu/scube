@@ -21,6 +21,7 @@ Installation instructions
 2. Expand the file in the desired place in your disk
 3. Open a conda command prompt (*if you are using miniforge, use the Miniforge Prompt*)
 4. Make sure to activate the conda environment you have created to run WEIS and SCUBE (``e.g., weis-env``)
+
 .. code:: bash
 
    conda activate weis-env
