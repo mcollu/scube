@@ -1,5 +1,9 @@
 Analysis A02 Lx: max average tilt angle (serviceability limit state)
-========================================================
+====================================================================
+
+.. note::
+
+   WORK IN PROGRESS - IGNORE FOR THE TIME BEING
 
 Introduction
 ------------
@@ -43,7 +47,7 @@ where
 +----------------------+------+------------------------------------------------------------+
 | Variable             | u.m. | Description                                                |
 +======================+======+============================================================+
-|  :math:`F_{T_rated}` | N    | Aerodynamic thrust at rated wind speed                     |
+|  :math:`F_{Trated}` | N    | Aerodynamic thrust at rated wind speed                     |
 +----------------------+------+------------------------------------------------------------+
 |  :math:`z_h`         | m    | Hub height vertical coordinate                             |
 +----------------------+------+------------------------------------------------------------+
