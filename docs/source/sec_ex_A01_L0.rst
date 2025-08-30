@@ -71,7 +71,7 @@ Run the analysis
 
   conda activate weis-env
 
-- Navigate to the root folder `scube'
+- Navigate to the root folder ``scube``
 
 - Launch the analysis with the following command
 
