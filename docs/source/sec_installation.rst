@@ -6,7 +6,9 @@ Installation
 Pre-requisites
 --------------
 
-Requires the installation of WEIS by NREL. Info on how to install it `here <https://weis.readthedocs.io/en/latest/installation.html>`_.
+Requires the installation of WEIS by NREL.
+
+Info on how to install it can be found `here <https://weis.readthedocs.io/en/latest/installation.html>`_.
 
 It is recommended to use miniforge to create conda environments and install WEIS. Miniforge can be obtained `here <https://github.com/conda-forge/miniforge>`_.
 
@@ -63,7 +65,8 @@ After installation, you can run a quick check to verify the correct installation
 
 This runs a demonstration of a series of typical wind turbine analyses and writes results into the ``scube\tests\output`` folder.
 In the miniforge prompt command window, the following should appear (multiple times, once for each analysis).
-N.B. Some WEIS "Warnings" may appear. There are not critical.
+
+N.B. Some WEIS "Warnings" may appear. They are not critical.
 
 .. code:: bash
 
