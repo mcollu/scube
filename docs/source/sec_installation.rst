@@ -31,7 +31,7 @@ Installation instructions
 
    .. code:: bash
 
-   conda info --envs
+      conda info --envs
 
 5. Navigate, within the command prompt, to the folder ``scube\dist``
 6. Install the latest version of the SCUBE .whl file that you can find in that folder. For example, for SCUBE v1.0.0
