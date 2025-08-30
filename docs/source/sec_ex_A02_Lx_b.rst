@@ -43,15 +43,15 @@ where
 +-----------------------+------+------------------------------------------------------------+
 | Variable              | u.m. | Description                                                |
 +=======================+======+============================================================+
-|  :math: `F_{T_rated}` | N    | Aerodynamic thrust at rated wind speed                     |
+|  :math:`F_{T_rated}` | N    | Aerodynamic thrust at rated wind speed                     |
 +-----------------------+------+------------------------------------------------------------+
-|  :math: `z_h`         | m    | Hub height vertical coordinate                             |
+|  :math:`z_h`         | m    | Hub height vertical coordinate                             |
 +-----------------------+------+------------------------------------------------------------+
-|  :math: `z_m`         | m    | Fairlead vertical coordinate                               |
+|  :math:`z_m`         | m    | Fairlead vertical coordinate                               |
 +-----------------------+------+------------------------------------------------------------+
-|  :math: `F_B`         | N    | Buoyancy force (at rest)                                   |
+|  :math:`F_B`         | N    | Buoyancy force (at rest)                                   |
 +-----------------------+------+------------------------------------------------------------+
-|  :math: `GM_{pitch}`  | m    | Metacentric height around for a rotation around the y axis |
+|  :math:`GM_{pitch}`  | m    | Metacentric height around for a rotation around the y axis |
 +-----------------------+------+------------------------------------------------------------+
 
 
