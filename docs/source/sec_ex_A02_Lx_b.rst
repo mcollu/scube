@@ -38,7 +38,7 @@ The average tilt angle is obtained with an analytical approach, using the follow
 .. math::
    \theta = \arcsin ( \frac{F_{T_rated} * (z_h - z_m)} { F_B * GM_pitch } ) / pi()*180
 
-where
+where c
 
 .. math::
    F_{t_rated}    & N   & Aerodynamic thrust at rated wind speed \\
