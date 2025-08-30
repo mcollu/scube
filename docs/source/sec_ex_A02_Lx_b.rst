@@ -37,7 +37,7 @@ The average tilt angle is obtained with an analytical approach, using the follow
 
 .. math::
 
-   tilt = arcsin( \frac{F_{T_rated} * (z_h - z_m)} { F_B * GM_pitch } ) / pi()*180
+   \theta = arcsin( \frac{F_{T_rated} * (z_h - z_m)} { F_B * GM_pitch } ) / pi()*180
 
 where
 
