@@ -28,6 +28,7 @@ Installation instructions
 
 .. note::
    If you do not remember what name you gave to the environment, you can run the following to know the names of all the environments
+
    .. code:: bash
 
    conda info --envs
