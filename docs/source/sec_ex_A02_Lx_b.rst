@@ -40,13 +40,15 @@ The average tilt angle is obtained with an analytical approach, using the follow
 
 where 
 
-.. math::
-
-   F_{t_rated}    & N   & Aerodynamic thrust at rated wind speed \\
-   z_h            & m   & Hub height vertical coordinate \\
-   z_m            & m   & Fairlead vertical coordinate \\
-   F_B            & N   & Buoyancy force (at rest) \\
-   GM_{pitch}     & m   & Metacentric height around for a rotation around the y axis \\
++--------------------+------+------------------------------------------------------------+
+| Variable           | u.m. | Description                                                |
++====================+======+============================================================+
+| :math: F_{T_rated} | N    | Aerodynamic thrust at rated wind speed                     |
+| :math: z_h         | m    | Hub height vertical coordinate                             |
+| :math: z_m         | m    | Fairlead vertical coordinate                               |
+| :math: F_B         | N    | Buoyancy force (at rest)                                   |
+| :math: GM_{pitch}  | m    | Metacentric height around for a rotation around the y axis |
++--------------------+------+------------------------------------------------------------+
 
 Level 1 (L1)
 ^^^^^^^^^^^^
