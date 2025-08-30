@@ -36,19 +36,23 @@ Level 0 (L0)
 The average tilt angle is obtained with an analytical approach, using the following equation.
 
 .. math::
-   \theta = \arcsin \left( \frac{F_{T_rated} * (z_h - z_m)} { F_B * GM_{pitch} } \right) / \pi*180
+   \theta = \arcsin \left( \frac{F_{Trated} * (z_h - z_m)} { F_B * GM_{pitch} } \right) / \pi*180
 
 where 
 
-+--------------------+------+------------------------------------------------------------+
-| Variable           | u.m. | Description                                                |
-+====================+======+============================================================+
-| :math: F_{T_rated} | N    | Aerodynamic thrust at rated wind speed                     |
-| :math: z_h         | m    | Hub height vertical coordinate                             |
-| :math: z_m         | m    | Fairlead vertical coordinate                               |
-| :math: F_B         | N    | Buoyancy force (at rest)                                   |
-| :math: GM_{pitch}  | m    | Metacentric height around for a rotation around the y axis |
-+--------------------+------+------------------------------------------------------------+
++----------------------+------+------------------------------------------------------------+
+| Variable             | u.m. | Description                                                |
++======================+======+============================================================+
+| :math: `F_{T_rated}` | N    | Aerodynamic thrust at rated wind speed                     |
++----------------------+------+------------------------------------------------------------+
+| :math: `z_h`         | m    | Hub height vertical coordinate                             |
++----------------------+------+------------------------------------------------------------+
+| :math: `z_m`         | m    | Fairlead vertical coordinate                               |
++----------------------+------+------------------------------------------------------------+
+| :math: `F_B`         | N    | Buoyancy force (at rest)                                   |
++----------------------+------+------------------------------------------------------------+
+| :math: `GM_{pitch}`  | m    | Metacentric height around for a rotation around the y axis |
++----------------------+------+------------------------------------------------------------+
 
 Level 1 (L1)
 ^^^^^^^^^^^^
