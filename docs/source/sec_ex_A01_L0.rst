@@ -5,7 +5,7 @@ Introduction
 ------------
 Aim
 ~~~
-To verify that the geometrical characteristics of the tower are compatible against a series of simple geometrical checks
+To verify that the geometrical characteristics of the tower are compatible against a series of simple geometrical checks.
 
 Constraints
 ~~~~~~~~~~~
@@ -45,12 +45,16 @@ Level 0 (L0)
 The values of the parameters, read from the WEIS output files, are compared against the constraint values.
 No postprocessing of the WEIS output necessary.
 
+Perform the analysis
+--------------------
+
 Prepare the input file
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 The SCUBE input data can be found in ``scube\data``.
 
 Tower
-~~~~~
+^^^^^
+
 - Open the file ``INPUT_tower.xlsx``
 - Familiarise yourself with the variables, explained in the ``legend`` sheet
 - Specify the geometry of the cans in the ``geometry`` sheet
@@ -59,7 +63,7 @@ Tower
 
 
 Run the analysis
-----------------
+~~~~~~~~~~~~~~~~
 - Open a miniforge/miniconda/conda terminal prompt
 - Activate the WEIS environment you set up (see :ref:`sec_installation`)
 .. code:: bash
@@ -70,7 +74,7 @@ Run the analysis
   `python main.py A01 L0'
 
 Expected conda prompt outcome
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If all goes well, you should see something similar to the following.
 
 .. code:: bash
