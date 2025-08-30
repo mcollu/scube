@@ -6,10 +6,12 @@ How do you run an analysis with SCUBE?
 - Open a miniforge/miniconda/conda terminal prompt
 - Activate the WEIS environment you set up
 .. code:: bash
+
   conda activate weis-env
-- Navigate to the root folder `scube'
+- Navigate to the root folder ``scube``
 - Launch the analysis Axy Lz with the following command
 .. code:: bash
+
   `python main.py A01 L1'
 
 .. _sec_config:
