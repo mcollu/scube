@@ -167,13 +167,13 @@ Run the analysis
 
 .. code:: bash
 
-  python main.py A01 L0
+  python main.py A02 L0
 
 or
 
 .. code:: bash
 
-  python main.py A01 L2
+  python main.py A02 L2
 
 Expected conda prompt outcome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
