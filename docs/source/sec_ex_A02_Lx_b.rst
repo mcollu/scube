@@ -67,16 +67,105 @@ Level 2 (L2)
 ^^^^^^^^^^^^
 OpenFAST is utilised to derive this parameter, adopting the following settings:
 
-- Wind
-   - Speed: rated wind speed
-   - Direction: 5 directions, 0:30:120
-- Waves: no waves
-- Currents: no currents
-- Wind turbine: operational
+- Metocean conditions:
+   - Wind
+      - Speed: steady at rated wind speed (10.64 m/s)
+      - Turbulence: No
+      - Direction: 5 directions, 0:30:120
+   - Waves: no waves
+   - Currents: no currents
+- Wind turbine
+   - Situation: power production
 - Simulation:
    - Analysis time: 600 seconds
 
 SCUBE postprocessing extracts the last 60s of the roll (``PtfmRoll``) and pitch (``PtfmPitch``) OpenFAST output signals, derive the total tilt angle (square root of sum of squares), and then calculates its average, which is then compared against the average specified in the constraint file.
+
+.. note::
+
+   This is not a realistic win, wave, currents situation, since there are no waves, no currents, and the wind speed is constant in time (steady). It only used to have an estimation of the average tilt angle of the overall system with a constant aerodynamic thrust force. In the simulation, the platform will initially drift toward the horizontal equilibrium condition (transient), and will then reach the final equilibrium position.
+
+.. note::
+
+   If you wish to change the OpenFAST settings mentioned above, these can be changed by modifying the relevant values in the WEIS input file ``modeling_options_A02_L2.yaml``, which can be found in the folder ``scube\data\weis_anlyses\A02_L2\``: look at the values at line 110 and afterward, which shold look like the following code.
+
+   .. code:: yaml
+
+      DLC_driver:
+    openfast_input_map:
+        inflow_prop_dir: [InflowWind,PropagationDir]
+        nac_yaw_dir: [ElastoDyn,NacYaw]
+    DLCs:
+        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
+          wind_speed:           [10.64]
+          user_group:
+            - inflow_prop_dir:  [0.]
+            - nac_yaw_dir:      [0.]
+          analysis_time: 600 #600
+          transient_time: 0
+          turbulent_wind:
+            flag: True
+            HubHt: 150
+            WindProfileType: 'PL'
+            RefHt: 150
+            PLExp: 0.12
+            TurbModel: 'NONE'
+        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
+          wind_speed:           [10.64]
+          user_group:
+            - inflow_prop_dir:  [30.]
+            - nac_yaw_dir:      [-30.]
+          analysis_time: 600 #600
+          transient_time: 0
+          turbulent_wind:
+            flag: True
+            HubHt: 150
+            WindProfileType: 'PL'
+            RefHt: 150
+            PLExp: 0.12
+            TurbModel: 'NONE'
+        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
+          wind_speed:           [10.64]
+          user_group:
+            - inflow_prop_dir:  [60.]
+            - nac_yaw_dir:      [-60.]
+          analysis_time: 600 #600
+          transient_time: 0
+          turbulent_wind:
+            flag: True
+            HubHt: 150
+            WindProfileType: 'PL'
+            RefHt: 150
+            PLExp: 0.12
+            TurbModel: 'NONE'
+        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
+          wind_speed:           [10.64]
+          user_group:
+            - inflow_prop_dir:  [90.]
+            - nac_yaw_dir:      [-90.]
+          analysis_time: 600 #600
+          transient_time: 0
+          turbulent_wind:
+            flag: True
+            HubHt: 150
+            WindProfileType: 'PL'
+            RefHt: 150
+            PLExp: 0.12
+            TurbModel: 'NONE'
+        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
+          wind_speed:           [10.64]
+          user_group:
+            - inflow_prop_dir:  [120.]
+            - nac_yaw_dir:      [-120.]
+          analysis_time: 600 #600
+          transient_time: 0
+          turbulent_wind:
+            flag: True
+            HubHt: 150
+            WindProfileType: 'PL'
+            RefHt: 150
+            PLExp: 0.12
+            TurbModel: 'NONE'
 
 Perform the analysis
 --------------------
