@@ -231,6 +231,7 @@ Level 0 (L0)
    
 Level 2 (L2)
 ^^^^^^^^^^^^
+See the full output :doc:`here <sec_ex_A02_L2_prompt_output>`
 
 Common errors
 -------------
