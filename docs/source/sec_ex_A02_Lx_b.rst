@@ -92,39 +92,39 @@ SCUBE postprocessing extracts the last 60s of the roll (``PtfmRoll``) and pitch 
    .. code:: yaml
 
       DLC_driver:
-    openfast_input_map:
-        inflow_prop_dir: [InflowWind,PropagationDir]
-        nac_yaw_dir: [ElastoDyn,NacYaw]
-    DLCs:
-        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
-          wind_speed:           [10.64]
-          user_group:
-            - inflow_prop_dir:  [0.]
-            - nac_yaw_dir:      [0.]
-          analysis_time: 600 #600
-          transient_time: 0
-          turbulent_wind:
-            flag: True
-            HubHt: 150
-            WindProfileType: 'PL'
-            RefHt: 150
-            PLExp: 0.12
-            TurbModel: 'NONE'
-        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
-          wind_speed:           [10.64]
-          user_group:
-            - inflow_prop_dir:  [30.]
-            - nac_yaw_dir:      [-30.]
-          analysis_time: 600 #600
-          transient_time: 0
-          turbulent_wind:
-            flag: True
-            HubHt: 150
-            WindProfileType: 'PL'
-            RefHt: 150
-            PLExp: 0.12
-            TurbModel: 'NONE'
-        (and other similar for the other directions)
+       openfast_input_map:
+           inflow_prop_dir: [InflowWind,PropagationDir]
+           nac_yaw_dir: [ElastoDyn,NacYaw]
+       DLCs:
+           - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
+             wind_speed:           [10.64]
+             user_group:
+               - inflow_prop_dir:  [0.]
+               - nac_yaw_dir:      [0.]
+             analysis_time: 600 #600
+             transient_time: 0
+             turbulent_wind:
+               flag: True
+               HubHt: 150
+               WindProfileType: 'PL'
+               RefHt: 150
+               PLExp: 0.12
+               TurbModel: 'NONE'
+           - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
+             wind_speed:           [10.64]
+             user_group:
+               - inflow_prop_dir:  [30.]
+               - nac_yaw_dir:      [-30.]
+             analysis_time: 600 #600
+             transient_time: 0
+             turbulent_wind:
+               flag: True
+               HubHt: 150
+               WindProfileType: 'PL'
+               RefHt: 150
+               PLExp: 0.12
+               TurbModel: 'NONE'
+           (and other similar for the other directions)
 
 Perform the analysis
 --------------------
