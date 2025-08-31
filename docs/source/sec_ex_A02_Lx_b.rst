@@ -83,7 +83,7 @@ SCUBE postprocessing extracts the last 60s of the roll (``PtfmRoll``) and pitch 
 
 .. note::
 
-   This is not a realistic win, wave, currents situation, since there are no waves, no currents, and the wind speed is constant in time (steady). It only used to have an estimation of the average tilt angle of the overall system with a constant aerodynamic thrust force. In the simulation, the platform will initially drift toward the horizontal equilibrium condition (transient), and will then reach the final equilibrium position.
+   This is not a realistic win, wave, currents situation, since there are no waves, no currents, and the wind speed is constant in time (steady), therefore the metocean conditions will NOT be taken from the Metocean input xlsx. It is only used to have an estimation of the average tilt angle of the overall system with a constant aerodynamic thrust force. In the simulation, the platform will initially drift toward the horizontal equilibrium condition (transient), and will then reach the final equilibrium position.
 
 .. note::
 
