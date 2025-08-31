@@ -229,6 +229,8 @@ Level 0 (L0)
    
    [INFO] Time taken: 0:00:14
    
+Level 2 (L2)
+^^^^^^^^^^^^
 
 Common errors
 -------------
