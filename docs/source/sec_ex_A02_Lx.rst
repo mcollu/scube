@@ -1,10 +1,6 @@
 Analysis A02 Lx: max average tilt angle (serviceability limit state)
 ====================================================================
 
-.. note::
-
-   WORK IN PROGRESS - IGNORE FOR THE TIME BEING
-
 Introduction
 ------------
 Aim
