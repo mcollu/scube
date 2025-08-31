@@ -60,7 +60,7 @@ Not implemented.
 
 Level 2 (L2)
 ^^^^^^^^^^^^
-.. note::
+.. warning::
 
    Differently from L0, at this analysis level a series of OpenFAST aero-hydro-servo-elastic coupled model of dynamics analyses are run, and postprocessed, therefore while A02 L0 takes a minute or so, A02 L2 may take 20-30 minutes to run.
 
