@@ -25,9 +25,9 @@ Level 1 (L1)
 +----+---------------------+-------+--------+----------------------------------------------+
 | 2  | Min_twr_1st_ss_freq | Hz    | 0.375^ | Min tower natural frequency, side-side modes |
 +----+---------------------+-------+--------+----------------------------------------------+
-| 3  | Max_twr_1st_fa_freq | Hz    | 0.75^  | Max tower natural frequency, fore-aft modes  |
+| 3  | Max_twr_1st_fa_freq | Hz    | 0.50^  | Max tower natural frequency, fore-aft modes  |
 +----+---------------------+-------+--------+----------------------------------------------+
-| 4  | Max_twr_1st_ss_freq | Hz    | 0.75^  | Max tower natural frequency, side-side modes |
+| 4  | Max_twr_1st_ss_freq | Hz    | 0.50^  | Max tower natural frequency, side-side modes |
 +----+---------------------+-------+--------+----------------------------------------------+
 
 
@@ -40,9 +40,9 @@ Level 2 (L2)
 +----+------------------------+-------+--------+-------------------------------------------------+
 | 2  | Min_twr_1st_ss_freq_L2 | Hz    | 0.375^ | Min tower natural frequency, 1st side-side mode |
 +----+------------------------+-------+--------+-------------------------------------------------+
-| 3  | Max_twr_1st_fa_freq_L2 | Hz    | 0.75^  | Max tower natural frequency, fore-aft modes     |
+| 3  | Max_twr_1st_fa_freq_L2 | Hz    | 0.50^  | Max tower natural frequency, fore-aft modes     |
 +----+------------------------+-------+--------+-------------------------------------------------+
-| 4  | Max_twr_1st_ss_freq_L2 | Hz    | 0.75^  | Max tower natural frequency, side-side modes    |
+| 4  | Max_twr_1st_ss_freq_L2 | Hz    | 0.50^  | Max tower natural frequency, side-side modes    |
 +----+------------------------+-------+--------+-------------------------------------------------+
 
 
