@@ -1038,7 +1038,7 @@
    angle of attack or low relative velocity. This warning will not be repeated though the condition
    may persist.
   
-  Generator speed:    5.8 RPM, Pitch angle:   2.6 deg, Power:  9278.3 kW, Est. wind Speed:   8.3 m/s
+   Generator speed:    5.8 RPM, Pitch angle:   2.6 deg, Power:  9278.3 kW, Est. wind Speed:   8.3 m/s
    Time: 10 of 600 seconds.  Estimated final completion at 09:52:29 (in 0.001 days).                Generator speed:    5.8 RPM, Pitch angle:   0.8 deg, Power: 10000.7 kW, Est. wind Speed:   9.8 m/s
    Time: 20 of 600 seconds.  Estimated final completion at 09:52:42 (in 0.001 days).                Generator speed:    7.1 RPM, Pitch angle:   2.7 deg, Power: 10710.9 kW, Est. wind Speed:  10.3 m/s
    Time: 30 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).                Generator speed:    7.4 RPM, Pitch angle:   2.0 deg, Power: 14156.1 kW, Est. wind Speed:  10.3 m/s
@@ -1051,4 +1051,114 @@
    Time: 100 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13986.3 kW, Est. wind Speed:  10.6 m/s
    Time: 110 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13727.1 kW, Est. wind Speed:  10.5 m/s
    Time: 120 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13492.9 kW, Est. wind Speed:  10.4 m/s
-   Time: 130 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).        
+   Time: 130 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.3 RPM, Pitch angle:   2.6 deg, Power: 13441.1 kW, Est. wind Speed:  10.4 m/s
+   Time: 140 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.6 deg, Power: 13546.6 kW, Est. wind Speed:  10.4 m/s
+   Time: 150 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13813.2 kW, Est. wind Speed:  10.5 m/s
+   Time: 160 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13910.8 kW, Est. wind Speed:  10.6 m/s
+   Time: 170 of 600 seconds.  Estimated final completion at 09:52:60 (in 0.001 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13639.6 kW, Est. wind Speed:  10.5 m/s
+   Time: 180 of 600 seconds.  Estimated final completion at 09:52:60 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.7 deg, Power: 13521.9 kW, Est. wind Speed:  10.4 m/s
+   Time: 190 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.6 deg, Power: 13489.3 kW, Est. wind Speed:  10.4 m/s
+   Time: 200 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.7 deg, Power: 13577.6 kW, Est. wind Speed:  10.4 m/s
+   Time: 210 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.9 deg, Power: 13822.7 kW, Est. wind Speed:  10.5 m/s
+   Time: 220 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13834.7 kW, Est. wind Speed:  10.6 m/s
+   Time: 230 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.9 deg, Power: 13594.4 kW, Est. wind Speed:  10.5 m/s
+   Time: 240 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.7 deg, Power: 13526.1 kW, Est. wind Speed:  10.4 m/s
+   Time: 250 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.7 deg, Power: 13510.1 kW, Est. wind Speed:  10.4 m/s
+   Time: 260 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.7 deg, Power: 13615.0 kW, Est. wind Speed:  10.5 m/s
+   Time: 270 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.5 RPM, Pitch angle:   2.9 deg, Power: 13817.9 kW, Est. wind Speed:  10.5 m/s
+   Time: 280 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13766.6 kW, Est. wind Speed:  10.6 m/s
+   Time: 290 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.9 deg, Power: 13578.4 kW, Est. wind Speed:  10.5 m/s
+   Time: 300 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.7 deg, Power: 13527.2 kW, Est. wind Speed:  10.4 m/s
+   Time: 310 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.7 deg, Power: 13520.2 kW, Est. wind Speed:  10.4 m/s
+   Time: 320 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.001 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13646.7 kW, Est. wind Speed:  10.5 m/s
+   Time: 330 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13806.4 kW, Est. wind Speed:  10.6 m/s
+   Time: 340 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13710.1 kW, Est. wind Speed:  10.6 m/s
+   Time: 350 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.9 deg, Power: 13567.9 kW, Est. wind Speed:  10.5 m/s
+   Time: 360 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13526.1 kW, Est. wind Speed:  10.4 m/s
+   Time: 370 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.7 deg, Power: 13542.8 kW, Est. wind Speed:  10.4 m/s
+   Time: 380 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13666.2 kW, Est. wind Speed:  10.5 m/s
+   Time: 390 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13784.7 kW, Est. wind Speed:  10.6 m/s
+   Time: 400 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13675.4 kW, Est. wind Speed:  10.5 m/s
+   Time: 410 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.9 deg, Power: 13560.6 kW, Est. wind Speed:  10.5 m/s
+   Time: 420 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13519.0 kW, Est. wind Speed:  10.4 m/s
+   Time: 430 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.7 deg, Power: 13567.7 kW, Est. wind Speed:  10.5 m/s
+   Time: 440 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13698.1 kW, Est. wind Speed:  10.5 m/s
+   Time: 450 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13755.5 kW, Est. wind Speed:  10.6 m/s
+   Time: 460 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13643.0 kW, Est. wind Speed:  10.5 m/s
+   Time: 470 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13563.5 kW, Est. wind Speed:  10.5 m/s
+   Time: 480 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13515.7 kW, Est. wind Speed:  10.5 m/s
+   Time: 490 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13587.1 kW, Est. wind Speed:  10.5 m/s
+   Time: 500 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   2.9 deg, Power: 13723.4 kW, Est. wind Speed:  10.5 m/s
+   Time: 510 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13732.3 kW, Est. wind Speed:  10.6 m/s
+   Time: 520 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13620.9 kW, Est. wind Speed:  10.5 m/s
+   Time: 530 of 600 seconds.  Estimated final completion at 09:52:58 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13555.5 kW, Est. wind Speed:  10.5 m/s
+   Time: 540 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13531.5 kW, Est. wind Speed:  10.5 m/s
+   Time: 550 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13608.9 kW, Est. wind Speed:  10.5 m/s
+   Time: 560 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   2.9 deg, Power: 13723.8 kW, Est. wind Speed:  10.5 m/s
+   Time: 570 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.5 RPM, Pitch angle:   3.0 deg, Power: 13708.0 kW, Est. wind Speed:  10.6 m/s
+   Time: 580 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.9 deg, Power: 13607.7 kW, Est. wind Speed:  10.5 m/s
+   Time: 590 of 600 seconds.  Estimated final completion at 09:52:59 (in 0.000 days).               Generator speed:    7.4 RPM, Pitch angle:   2.8 deg, Power: 13553.2 kW, Est. wind Speed:  10.5 m/s
+  
+    Total Real Time:       1.6055 minutes
+    Total CPU Time:        1.6 minutes
+    Simulation CPU Time:   1.5768 minutes
+    Simulated Time:        10 minutes
+    Time Ratio (Sim/CPU):  6.3419
+  
+    OpenFAST terminated normally.
+  
+  Runtime:        DLC1.2_4_weis_job_0.fst = 96.34 s
+  WARNING: DLC 1.1 is being used for AEP calculations.  Use the AEP DLC for more accurate wind modeling with constant TI.
+  WARNING: OpenFAST is not run using DLC AEP, 1.1, or 1.2. AEP cannot be estimated well. Using average power instead.
+  RuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\utilization_dnvgl.py:322
+  The number of calls to function has reached maxfev = 50.########################################
+  Objectives
+  Turbine AEP: 0.0000000000 GWh
+  Blade Mass:  68058.3521941191 kg
+  LCOE:        80.6214315038 USD/MWh
+  Tip Defl.:   15.6405487061 m
+  IPC Ki1p = 0.000e+00
+  IPC Ki1p = 0.000e+00
+  ########################################
+  ----------------
+  Design Variables
+  ----------------
+  name  val  size  lower  upper
+  ----  ---  ----  -----  -----
+  
+  -----------
+  Constraints
+  -----------
+  name  val  size  lower  upper  equals
+  ----  ---  ----  -----  -----  ------
+  
+  ----------
+  Objectives
+  ----------
+  name  val  size
+  ----  ---  ----
+  
+  Run time (A02_L2): 555.7557520866394
+  
+   ******* SCUBE: postprocessing - results VS constraints analysis *******
+  UserWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\openpyxl\worksheet\_read_only.py:85
+  Data Validation extension is not supported and will be removed
+           ******* Constraint definitions imported *******
+  
+           ******* Simulation output xlsx and yaml files data loaded *******
+  
+           ******* Constraint verification started *******
+  
+                   Check of constraint Max_tilt_mean
+  
+           ******* Constraint verification completed *******
+        Constraint Constraint Type Constraint um  Constraint Value  Simulated Value Status                                        Description
+  0  Max_tilt_mean             Max           deg                 5            4.420   Pass  Max allowable average tilt (global platform re...
+  1  Max_tilt_mean             Max           deg                 5            4.506   Pass  Max allowable average tilt (global platform re...
+  2  Max_tilt_mean             Max           deg                 5            4.553   Pass  Max allowable average tilt (global platform re...
+  3  Max_tilt_mean             Max           deg                 5            4.473   Pass  Max allowable average tilt (global platform re...
+  4  Max_tilt_mean             Max           deg                 5            4.417   Pass  Max allowable average tilt (global platform re...
+  
+   ******* SCUBE: Validation report with formatting exported successfully *******
+  
+  [INFO] Time taken: 0:09:19
