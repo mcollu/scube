@@ -1,7 +1,7 @@
-Analysis A03 Lx: 
-====================================================================
+Analysis A03 Lx: tower natural frequencies of vibration
+=======================================================
 
-.. note::
+.. warning::
 
    WORK IN PROGRESS - IGNORE FOR THE TIME BEING
 
@@ -9,64 +9,66 @@ Introduction
 ------------
 Aim
 ~~~
-To verify that the *average* whole platform inclination angle is less than the specified angle (serviceability limit state).
+To verify if the natural frequencies of the tower's flexible modes are sufficiently detuned from the excitation frequencies.
 
 Constraints
 ~~~~~~~~~~~
-To be specified in CNSTR.xlsx
+To be specified in CNSTR.xlsx .
 
-+----+---------------+-------+-------+---------------------------------------------------------------------------------+
-| ID | Constraint    | Units | Value | Description                                                                     |
-+====+===============+=======+=======+=================================================================================+
-| 1  | Max_tilt_mean | deg   | 5.00  | Max allowable average tilt (global platform response inclination) in roll/pitch |
-+----+---------------+-------+-------+---------------------------------------------------------------------------------+
+Level 1 (L1)
+^^^^^^^^^^^^
 
++----+---------------------+-------+-------+------------------------------------------------------------------------+
+| ID | Constraint          | Units | Value | Description                                                            |
++====+=====================+=======+=======+========================================================================+
+| 1  | Min_twr_1st_fa_freq | Hz    |       | Min allowable tower natural frequency, 1st fore-aft mode of vibration  |
++----+---------------------+-------+-------+------------------------------------------------------------------------+
+| 2  | Min_twr_1st_ss_freq | Hz    |       | Min allowable tower natural frequency, 1st side-side mode of vibration |
++----+---------------------+-------+-------+------------------------------------------------------------------------+
 
-+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Notes |                                                                                                                                                                                 |
-+=======+=================================================================================================================================================================================+
-| ^     | For IEA 15MW Reference Wind Turbine (Updated reference values `here <https://github.com/IEAWindSystems/IEA-15-240-RWT/blob/master/Documentation/IEA-15-240-RWT_tabular.xlsx>`_) |
-+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ^^    | Value agreed in WIND-14 STIFF-STIFF TOWER DESIGN FOR FLOATING WIND TURBINES (Previous TIC LCPE project)                                                                         |
-+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ^^^   | DNV-RP-0289, Section 5.5 Serviceability limit state                                                                                                                             |
-+-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Level 2 (L2)
+
++----+------------------------+-------+-------+------------------------------------------------------------------------+
+| ID | Constraint             | Units | Value | Description                                                            |
++====+========================+=======+=======+========================================================================+
+| 1  | Min_twr_1st_fa_freq_L2 | Hz    |       | Min allowable tower natural frequency, 1st fore-aft mode of vibration  |
++----+------------------------+-------+-------+------------------------------------------------------------------------+
+| 2  | Min_twr_1st_ss_freq_L2 | Hz    |       | Min allowable tower natural frequency, 1st side-side mode of vibration |
++----+------------------------+-------+-------+------------------------------------------------------------------------+
+
 
 Methodology
 ~~~~~~~~~~~
 
-Level 0 (L0)
-^^^^^^^^^^^^
-The average tilt angle is obtained with an analytical approach, using the following equation.
-
-.. math::
-   \theta = \arcsin \left( \frac{F_{Trated} * (z_h - z_m)} { F_B * GM_{pitch} } \right) / \pi*180
-
-where 
-
-+----------------------+------+------------------------------------------------------------+
-| Variable             | u.m. | Description                                                |
-+======================+======+============================================================+
-|  :math:`F_{Trated}`  | N    | Aerodynamic thrust at rated wind speed                     |
-+----------------------+------+------------------------------------------------------------+
-|  :math:`z_h`         | m    | Hub height vertical coordinate                             |
-+----------------------+------+------------------------------------------------------------+
-|  :math:`z_m`         | m    | Fairlead vertical coordinate                               |
-+----------------------+------+------------------------------------------------------------+
-|  :math:`F_B`         | N    | Buoyancy force (at rest)                                   |
-+----------------------+------+------------------------------------------------------------+
-|  :math:`GM_{pitch}`  | m    | Metacentric height around for a rotation around the y axis |
-+----------------------+------+------------------------------------------------------------+
-
 Level 1 (L1)
 ^^^^^^^^^^^^
-Not implemented.
+At level 1, the WEIS eigenanalysis capability is leveraged, and the natural frequencies of the modes of vibration of the tower are read from the WEIS output xlsx file.
+
+The two parameters read are:
+- ``floatingse.fore_aft_freqs``: natural frequencies of vibration of the fore-aft modes of vibration of the tower.
+- ``floatingse.side_side_freqs``: natural frequencies of vibration of the side-side modes of vibration of the tower.
+
+The advantage of this analysis at this level is its speed, but it is considered less accurate than the level 2 analysis (see below).
 
 Level 2 (L2)
 ^^^^^^^^^^^^
+At level 2, two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simulations are conducted, more precisely two free decay tests.
+
+Then, a frequency analysis of the free decay tower top displacement response signal is performed (SCUBE postprocessing), identifying the peak frequency, which is assumed to be the 1st natural frequency of the relevant tower mode of vibration.
+
+These frequencies are then compared against the values specified in the constraint input spreadsheet.
+
 .. note::
 
-   Differently from L0, at this analysis level a series of OpenFAST aero-hydro-servo-elastic coupled model of dynamics analyses are run, and postprocessed, therefore while A02 L0 takes a minute or so, A02 L2 may take 20-30 minutes to run.
+   Differently from L1, at this analysis level two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simulations are run, and postrocessed.
+
+   Nonetheless, since only two simulations are run, and since they are rather short (around 5 seconds), also this analysis is rather fact, taking only a few minutes.
+
+Considering a no wind, no waves, no currents environment, the tower top is deformed in the fore-aft direction (1st simulation) and side-to-side direction (2nd simulation), by imposing a displacement of the tower top as starting value of the simulation.
+
+Level 2 (L2)
+^^^^^^^^^^^^
+
 
 OpenFAST is utilised to derive this parameter, adopting the following settings:
 
