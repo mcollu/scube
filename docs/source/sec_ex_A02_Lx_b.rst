@@ -58,13 +58,16 @@ where
 |  :math:`GM_{pitch}`  | m    | Metacentric height around for a rotation around the y axis |
 +----------------------+------+------------------------------------------------------------+
 
-
 Level 1 (L1)
 ^^^^^^^^^^^^
 Not implemented.
 
 Level 2 (L2)
 ^^^^^^^^^^^^
+.. note::
+
+   Differently from L0, at this analysis level a series of OpenFAST aero-hydro-servo-elastic coupled model of dynamics analyses are run, and postprocessed, therefore while A02 L0 takes a minute or so, A02 L2 may take 20-30 minutes to run.
+
 OpenFAST is utilised to derive this parameter, adopting the following settings:
 
 - Metocean conditions:
@@ -176,9 +179,55 @@ Expected conda prompt outcome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If all goes well, you should see something similar to the following.
 
+Level 0 (L0)
+^^^^^^^^^^^^
+
 .. code:: bash
   
-  <to insert>
+  Using weis.aeroelasticse in rosco.toolbox...
+
+ ******* SCUBE: preprocessing - updating tower geometry *******
+
+ ******* SCUBE: processing - WEIS analysis *******
+RuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\utilization_dnvgl.py:322
+The number of calls to function has reached maxfev = 50.RuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\cylinder_member.py:513
+divide by zero encountered in scalar divideRuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\cylinder_member.py:514
+divide by zero encountered in scalar divide----------------
+Design Variables
+----------------
+name  val  size  lower  upper
+----  ---  ----  -----  -----
+
+-----------
+Constraints
+-----------
+name  val  size  lower  upper  equals
+----  ---  ----  -----  -----  ------
+
+----------
+Objectives
+----------
+name  val  size
+----  ---  ----
+
+Run time (A02_L0): 11.181295156478882
+
+ ******* SCUBE: postprocessing - results VS constraints analysis *******
+UserWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\openpyxl\worksheet\_read_only.py:85
+Data Validation extension is not supported and will be removed
+         ******* Constraint definitions imported *******
+
+         ******* Simulation output xlsx and yaml files data loaded *******
+
+         ******* Constraint verification started *******
+
+                 Check of constraint Max_tilt_mean
+
+         ******* Constraint verification completed *******
+
+ ******* SCUBE: Validation report with formatting exported successfully *******
+
+[INFO] Time taken: 0:00:14
 
 
 Common errors
