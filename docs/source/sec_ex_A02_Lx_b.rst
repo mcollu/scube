@@ -83,7 +83,9 @@ SCUBE postprocessing extracts the last 60s of the roll (``PtfmRoll``) and pitch 
 
 .. note::
 
-   This is not a realistic win, wave, currents situation, since there are no waves, no currents, and the wind speed is constant in time (steady), therefore the metocean conditions will NOT be taken from the Metocean input xlsx. It is only used to have an estimation of the average tilt angle of the overall system with a constant aerodynamic thrust force. In the simulation, the platform will initially drift toward the horizontal equilibrium condition (transient), and will then reach the final equilibrium position.
+   This is not a realistic wind, waves, and currents situation, since there are no waves, no currents, and the wind speed is constant in time (steady), therefore the metocean conditions will NOT be taken from the Metocean input xlsx.
+
+   It is only used to have an estimation of the average tilt angle of the overall system with a constant aerodynamic thrust force. In the simulation, the platform will initially drift toward the horizontal equilibrium condition (transient), and will then reach the final equilibrium position.
 
 .. note::
 
@@ -142,6 +144,10 @@ Tower
 - Specify the aerodynamic drag properties of the tower in the ``drag`` sheet (if unsure, leave the default values, they can be applied to a wide range of dimensions)
 - Specify the tower material characteristics in the ``material`` sheet (the default values are for the steel	ASTM A572 Grade 50, see more `here	<http://www.matweb.com/search/DataSheet.aspx?MatGUID=9ced5dc901c54bd1aef19403d0385d7f>`_
 
+Metocean
+^^^^^^^^
+
+This analysis does not need to consider the conditions specified in the metocean input spreadsheet, so this can be ignored.
 
 Run the analysis
 ~~~~~~~~~~~~~~~~
