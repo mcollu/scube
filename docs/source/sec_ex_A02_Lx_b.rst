@@ -124,48 +124,7 @@ SCUBE postprocessing extracts the last 60s of the roll (``PtfmRoll``) and pitch 
             RefHt: 150
             PLExp: 0.12
             TurbModel: 'NONE'
-        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
-          wind_speed:           [10.64]
-          user_group:
-            - inflow_prop_dir:  [60.]
-            - nac_yaw_dir:      [-60.]
-          analysis_time: 600 #600
-          transient_time: 0
-          turbulent_wind:
-            flag: True
-            HubHt: 150
-            WindProfileType: 'PL'
-            RefHt: 150
-            PLExp: 0.12
-            TurbModel: 'NONE'
-        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
-          wind_speed:           [10.64]
-          user_group:
-            - inflow_prop_dir:  [90.]
-            - nac_yaw_dir:      [-90.]
-          analysis_time: 600 #600
-          transient_time: 0
-          turbulent_wind:
-            flag: True
-            HubHt: 150
-            WindProfileType: 'PL'
-            RefHt: 150
-            PLExp: 0.12
-            TurbModel: 'NONE'
-        - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
-          wind_speed:           [10.64]
-          user_group:
-            - inflow_prop_dir:  [120.]
-            - nac_yaw_dir:      [-120.]
-          analysis_time: 600 #600
-          transient_time: 0
-          turbulent_wind:
-            flag: True
-            HubHt: 150
-            WindProfileType: 'PL'
-            RefHt: 150
-            PLExp: 0.12
-            TurbModel: 'NONE'
+        (and other similar for the other directions)
 
 Perform the analysis
 --------------------
