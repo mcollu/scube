@@ -217,6 +217,7 @@ Level 1 (L1)
     ******* SCUBE: Validation report with formatting exported successfully *******
    
    [INFO] Time taken: 0:00:45
+
 Level 2 (L2)
 ^^^^^^^^^^^^
 
