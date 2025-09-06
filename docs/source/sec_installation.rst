@@ -14,7 +14,7 @@ It is recommended to use miniforge to create conda environments and install WEIS
 
 .. note::
    
-   In the following, it is assumed that you named ``weis-env`` the WEIS environment where to run SCUBE.
+   In the following, it is assumed that you named the environment where SCUBE will be run ``weis-env``.
 
 Installation instructions
 -------------------------
@@ -29,14 +29,19 @@ Installation instructions
    conda activate weis-env
 
 .. note::
-   If you do not remember what name you gave to the environment, you can run the following to know the names of all the environments
+   If you do not remember what name you gave to the environment, you can run the following to list the names of all the environments
 
    .. code:: bash
 
       conda info --envs
 
 5. Navigate, within the command prompt, to the folder ``scube\dist``
-6. Install the latest version of the SCUBE .whl file that you can find in that folder. For example, for SCUBE v1.0.0
+
+.. code:: bash
+
+   cd "path-to-scube\dist"
+
+6. Install the latest version of the SCUBE from the .whl file in that folder. For example, for SCUBE v1.0.0
 
 .. code:: bash
 
@@ -46,7 +51,7 @@ This should install all the SCUBE scripts and all the required packages.
 
 .. note::
 
-   If you have installed a previous version of SCUBE, make sure to uninstall that first, and then install the new version of SCUBE, with the following command
+   If you have installed a previous version of SCUBE, make sure to uninstall that first with the command below, and then install the new version of SCUBE.
 
    .. code:: bash
    
@@ -99,4 +104,4 @@ N.B. Some WEIS "Warnings" may appear. They are not critical.
    
    [INFO] Time taken: 0:00:03
 
-3. Check in the folder ``scube\tests\output`` the validation reports created (e.g., validation_report_A03_L2.xlsx)
+3. Check in the folder ``scube\tests\output`` the validation reports created (e.g., validation_report_A03_L2.xlsx).
