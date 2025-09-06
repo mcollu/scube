@@ -12,6 +12,7 @@ Aim
 To perform a series of checks consideering the design load case DLC 1.6:
 
 - Serviceability limit state chcks:
+
   - Mean tilt angle < constraint
   - Max tilt angle < constraint
   - MPM tilt angle < constraint
@@ -19,9 +20,11 @@ To perform a series of checks consideering the design load case DLC 1.6:
   - MPM nacelle acceleration (x, y, z direction) < constraint
 
 - Geometric clearance checks:
+
   - Min distance between tower (axis) and blade tip > constraint
 
 - Structural integrity checks:
+
   - Max tower base shear stress < constraint
   - MPM tower base shear stress < constraint
   - Max tower base bending moment < constraint
