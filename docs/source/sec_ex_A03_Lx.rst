@@ -78,7 +78,7 @@ The advantage of this analysis at this level is its speed, but it is considered 
 
 Level 2 (L2)
 ^^^^^^^^^^^^
-At level 2, two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simulations are conducted, more precisely two free decay tests.
+At level 2, two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simulations are conducted. More specifically, two free decay tests are conducted, by imposing an initial displacement at the tower top, once in the fore-aft direction, and once in the side-to-side direction.
 
 Then, a frequency analysis of the free decay tower top displacement response signal is performed (SCUBE postprocessing), identifying the peak frequency, which is assumed to be the 1st natural frequency of the relevant tower mode of vibration.
 
