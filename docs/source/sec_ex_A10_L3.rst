@@ -58,17 +58,39 @@ Level 1 (L1)
 Level 2 (L2)
 ^^^^^^^^^^^^
 
-+----+------------------------+-------+--------+-------------------------------------------------+
-| ID | Constraint             | Units | Value  | Description                                     |
-+====+========================+=======+========+=================================================+
-| 1  | Min_twr_1st_fa_freq_L2 | Hz    | 0.375^ | Min tower natural frequency, 1st fore-aft mode  |
-+----+------------------------+-------+--------+-------------------------------------------------+
-| 2  | Min_twr_1st_ss_freq_L2 | Hz    | 0.375^ | Min tower natural frequency, 1st side-side mode |
-+----+------------------------+-------+--------+-------------------------------------------------+
-| 3  | Max_twr_1st_fa_freq_L2 | Hz    | 0.50^  | Max tower natural frequency, fore-aft modes     |
-+----+------------------------+-------+--------+-------------------------------------------------+
-| 4  | Max_twr_1st_ss_freq_L2 | Hz    | 0.50^  | Max tower natural frequency, side-side modes    |
-+----+------------------------+-------+--------+-------------------------------------------------+
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| ID | Constraint                               | Units | Value   | Description                                                                    |
++====+==========================================+=======+=========+================================================================================+
+| 1  | Max_tilt_mean                            | deg   | 5.0^^^  | Mean tilt angle less than constraint                                           |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 2  | Max_tilt_max                             | deg   | 10.0^^^ | Max tilt angle less than constraint                                            |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 3  | Max_tilt_MPM                             | deg   | 10.0^^^ | Most probable maximum tilt angle less than constraint                          |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 4  | Max_nac_acc_x_max                        | g     | 0.3^^^  | Max acceleration at tower top (x direction) less than constraint               |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 5  | Max_nac_acc_y_max                        | g     | 0.3^^^  | Max acceleration at tower top (y direction) less than constraint               |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 6  | Max_nac_acc_z_max                        | g     | 0.3^^^  | Max acceleration at tower top (z direction) less than constraint               |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 7  | Max_nac_acc_x_MPM                        | g     | 0.3^^^  | Most probable max acceleration at tower top (x direction) less than constraint |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 8  | Max_nac_acc_y_MPM                        | g     | 0.3^^^  | Most probable max acceleration at tower top (y direction) less than constraint |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 9  | Max_nac_acc_z_MPM                        | g     | 0.3^^^  | Most probable max acceleration at tower top (z direction) less than constraint |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 10 | Min_blade_tip_clrnc_from_twr             | m     | 5.0^    | Min blade tip clearance from tower AXIS higher than constraint (tower radius)  |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 11 | Max_twr_base_shear_max                   | kN    |         | Max tower base shear force less than constraint                                |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 12 | Max_twr_base_shear_MPM                   | kN    |         | Most probable max tower base shear force less than constraint                  |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 13 | Max_twr_base_bend_max                    | kNm   |         | Max tower base bending moment less than constraint                             |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 14 | Max_twr_base_bend_MPM                    | kNm   |         | Most probable max tower base bending moment less than constraint               |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
+| 15 | DNV_RP_C202_2021_buckling_res_cyl_shells | NA    | NA      | Check: buckling resistance of tower bottom can / shell                         |
++----+------------------------------------------+-------+---------+--------------------------------------------------------------------------------+
 
 
 +-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -82,9 +104,7 @@ Level 2 (L2)
 +-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note::
-   The suggested min value, to compare the tower natural frequency against, is, for a stiff-stiff tower, equal to three times the max rotational speed of the rotor (i.e., 3P max).
-
-   The suggested max value, to compare the tower natural frequency against, is, for a stiff-stiff tower, equal to six times the min rotational speed of the rotor (i.e., 6P min).
+   The suggested min value for the blade tip distance from the tower axis is 5m since this is the max diameter of the tower. Remember that the distance is NOT measured from the surface of the tower, but from the tower axis.
 
 Methodology
 ~~~~~~~~~~~
