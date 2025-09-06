@@ -97,7 +97,7 @@ Perform the analysis
 
 Prepare the input file
 ~~~~~~~~~~~~~~~~~~~~~~
-The SCUBE input data can be found in ``scube\data``.
+The SCUBE input data can be found in the folder ``scube\data``.
 
 Tower
 ^^^^^
