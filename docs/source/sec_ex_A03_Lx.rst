@@ -70,6 +70,7 @@ Level 1 (L1)
 At level 1, the WEIS eigenanalysis capability is leveraged, and the natural frequencies of the modes of vibration of the tower are read from the WEIS output xlsx file.
 
 The two parameters read are:
+
 - ``floatingse.fore_aft_freqs``: natural frequencies of vibration of the fore-aft modes of vibration of the tower.
 - ``floatingse.side_side_freqs``: natural frequencies of vibration of the side-side modes of vibration of the tower.
 
