@@ -5,6 +5,10 @@ Analysis A03 Lx: tower natural frequencies of vibration
 
    WORK IN PROGRESS - IGNORE FOR THE TIME BEING
 
+.. warning::
+
+   This analysis will perform a number of OpenFAST time domain simulations (~100, depending on the metocean combinations), and therefore can take a considerable amount of computing time (2-3 days on an HPC desktop machine, using 1 core).
+
 Introduction
 ------------
 Aim
