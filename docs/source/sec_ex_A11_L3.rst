@@ -197,7 +197,7 @@ Run the analysis
 
 .. code:: bash
 
-  python main.py A10 L3
+  python main.py A11 L3
 
 Expected conda prompt outcome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -206,7 +206,7 @@ If all goes well, you should see something similar to the following.
 Level 3 (L3)
 ^^^^^^^^^^^^
 
-See the full output :doc:`here <sec_ex_A10_L3_prompt_output>`
+See the full output :doc:`here <sec_ex_A11_L3_prompt_output>`
 
 Common errors
 -------------
