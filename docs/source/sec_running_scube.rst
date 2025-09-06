@@ -18,12 +18,9 @@ How do you run an analysis with SCUBE?
 Configuration file
 ------------------
 
-Should you wish to change the position and/or name of some of the files and folders used by SCUBE, you should edit the ``config.yaml`` file with your desired parameters before running the
-  analysis.
+Should you wish to change the position and/or name of some of the files and folders used by SCUBE, you should edit the ``config.yaml`` file in the root folder (``scube``) with your desired parameters before running the analysis.
 
-This file is in the root folder (i.e., ``scube``).
-
-An explanation of each parameter of the configuration is provided in the comments of the file.
+An explanation of each configuration parameter is provided in the comments throughout the file.
 
 .. code:: yaml
 
@@ -33,19 +30,19 @@ An explanation of each parameter of the configuration is provided in the comment
    tower_geometry_input:   "data/INPUT_tower.xlsx"                                 # Input spreadsheet - tower characteristics (geometry, material)
    
    ### ANALYSIS
-   constraints_xlsx:       "CNSTR.xlsx"                        # Input spreadsheet - constraints to be inposed. NB All the constraints for all the analyses are in here. One tab for each analysis
+   constraints_xlsx:       "CNSTR.xlsx"                        # Input spreadsheet - constraints to be imposed. NB All the constraints for all the analyses are in here. One tab for each analysis
    constraints_sheet_fmt:  "constraints_{ANALYSIS}"            # Input spreadsheet - constraints for the specific analysis, naming convention
    
-       # WEIS folder names
+   ### WEIS
    output_dir_base:        "data/weis_analyses"                # WEIS - WEIS output folder root
    outputs_subdir:         "outputs"                           # WEIS - WEIS output folder
-   modeling_options_fmt:   "modeling_options_{ANALYSIS}.yaml"  # WEIS - WEIS input - modeling options yaml file
-   analysis_options_fmt:   "analysis_options_{ANALYSIS}.yaml"  # WEIS - WEIS input - analysis options yaml file
+   modeling_options_fmt:   "modeling_options_{ANALYSIS}.yaml"  # WEIS - WEIS input - modeling options yaml file name
+   analysis_options_fmt:   "analysis_options_{ANALYSIS}.yaml"  # WEIS - WEIS input - analysis options yaml file name
    
-   output_file_xlsx:       "{ANALYSIS}_output.xlsx"            # WEIS - WEIS output - xlsx output filename
-   output_file_yaml:       "{ANALYSIS}_output.yaml"            # WEIS - WEIS output - yaml output filename
+   output_file_xlsx:       "{ANALYSIS}_output.xlsx"            # WEIS - WEIS output - xlsx output file name
+   output_file_yaml:       "{ANALYSIS}_output.yaml"            # WEIS - WEIS output - yaml output file name
    
    
    ### OUTPUT
-   modified_turbine_yaml:  "output/modified_IEA-15-240-RWT.yaml"   # WEIS - WEIS output - File of the modified floating wind turbine system (all the subsystems)
-   validation_report_folder: "output"                              # Scube - Output folder where the validation reports are saved
+   modified_turbine_yaml:  "output/modified_IEA-15-240-RWT.yaml"   # WEIS - WEIS output - file of the modified floating wind turbine system (all subsystems)
+   validation_report_folder: "output"                              # Scube - output folder where the validation reports are saved
