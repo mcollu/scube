@@ -80,17 +80,17 @@ Level 2 (L2)
 ^^^^^^^^^^^^
 At level 2, two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simulations are conducted. More specifically, two free decay tests are conducted, by imposing an initial displacement at the tower top, once in the fore-aft direction, and once in the side-to-side direction.
 
+Considering a no wind, no waves, no currents environment, the tower top is deformed in the fore-aft direction (1st simulation) and side-to-side direction (2nd simulation), by imposing a displacement of the tower top as starting value of the simulation.
+
 Then, a frequency analysis of the free decay tower top displacement response signal is performed (SCUBE postprocessing), identifying the peak frequency, which is assumed to be the 1st natural frequency of the relevant tower mode of vibration.
 
 These frequencies are then compared against the values specified in the constraint input spreadsheet.
 
 .. note::
 
-   Differently from L1, at this analysis level two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simulations are run, and postrocessed.
+   Differently from L1, at L2 two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simulations are run, and postprocessed.
 
-   Nonetheless, since only two simulations are run, and since they are rather short (around 5 seconds), also this analysis is rather fact, taking only a few minutes.
-
-Considering a no wind, no waves, no currents environment, the tower top is deformed in the fore-aft direction (1st simulation) and side-to-side direction (2nd simulation), by imposing a displacement of the tower top as starting value of the simulation.
+   Nonetheless, since only two simulations are run, and since they are rather short (around 5 seconds), also this analysis is rather quick, taking only a few minutes.
 
 Perform the analysis
 --------------------
