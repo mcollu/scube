@@ -174,89 +174,10 @@ Expected conda prompt outcome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If all goes well, you should see something similar to the following.
 
-Level 1 (L1)
+Level 3 (L3)
 ^^^^^^^^^^^^
 
-.. code:: bash
-   
-   Using weis.aeroelasticse in rosco.toolbox...
-
-    ******* SCUBE: preprocessing - updating tower geometry *******
-   
-    ******* SCUBE: processing - WEIS analysis *******
-   
-   ================
-   wisdem.wt.wt_rna
-   ================
-   NL: NLBGS 1 ; 5.75918932e+11 1
-   NL: NLBGS 2 ; 12997931 2.2569029e-05
-   NL: NLBGS 3 ; 302117.706 5.24583738e-07
-   NL: NLBGS 4 ; 7598.06643 1.31929444e-08
-   NL: NLBGS 5 ; 190.765705 3.3123708e-10
-   NL: NLBGS Converged
-   RuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\utilization_dnvgl.py:322
-   The number of calls to function has reached maxfev = 50.RuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\cylinder_member.py:513
-   divide by zero encountered in scalar divideRuntimeWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\wisdem\commonse\cylinder_member.py:514
-   divide by zero encountered in scalar divide----------------
-   Design Variables
-   ----------------
-   name  val  size  lower  upper
-   ----  ---  ----  -----  -----
-   
-   -----------
-   Constraints
-   -----------
-   name  val  size  lower  upper  equals
-   ----  ---  ----  -----  -----  ------
-   
-   ----------
-   Objectives
-   ----------
-   name  val  size
-   ----  ---  ----
-   
-   Run time (A03_L1): 42.0291702747345
-   
-    ******* SCUBE: postprocessing - results VS constraints analysis *******
-   UserWarning: C:\Users\mauri\miniforge3\envs\weis-env2\Lib\site-packages\openpyxl\worksheet\_read_only.py:85
-   Data Validation extension is not supported and will be removed
-            ******* Constraint definitions imported *******
-   
-            ******* Simulation output xlsx and yaml files data loaded *******
-   
-            ******* Constraint verification started *******
-   
-                    Check of constraint Min_twr_1st_fa_freq
-   
-                    Check of constraint Min_twr_1st_ss_freq
-   
-                    Check of constraint Max_twr_1st_fa_freq
-   
-                    Check of constraint Max_twr_1st_ss_freq
-   
-            ******* Constraint verification completed *******
-                Constraint Constraint Type Constraint um  Constraint Value  Simulated Value Status                                   Description
-   0   Min_twr_1st_fa_freq             Min            Hz             0.375            0.537   Pass   Min tower natural frequency, fore-aft modes
-   1   Min_twr_1st_fa_freq             Min            Hz             0.375            1.100   Pass   Min tower natural frequency, fore-aft modes
-   2   Min_twr_1st_fa_freq             Min            Hz             0.375            1.630   Pass   Min tower natural frequency, fore-aft modes
-   3   Min_twr_1st_ss_freq             Min            Hz             0.375            0.529   Pass  Min tower natural frequency, side-side modes
-   4   Min_twr_1st_ss_freq             Min            Hz             0.375            1.430   Pass  Min tower natural frequency, side-side modes
-   5   Min_twr_1st_ss_freq             Min            Hz             0.375            3.980   Pass  Min tower natural frequency, side-side modes
-   6   Max_twr_1st_fa_freq             Max            Hz             0.500            0.537   Fail   Max tower natural frequency, fore-aft modes
-   7   Max_twr_1st_fa_freq             Max            Hz             0.500            1.100   Fail   Max tower natural frequency, fore-aft modes
-   8   Max_twr_1st_fa_freq             Max            Hz             0.500            1.630   Fail   Max tower natural frequency, fore-aft modes
-   9   Max_twr_1st_ss_freq             Max            Hz             0.500            0.529   Fail  Max tower natural frequency, side-side modes
-   10  Max_twr_1st_ss_freq             Max            Hz             0.500            1.430   Fail  Max tower natural frequency, side-side modes
-   11  Max_twr_1st_ss_freq             Max            Hz             0.500            3.980   Fail  Max tower natural frequency, side-side modes
-   
-    ******* SCUBE: Validation report with formatting exported successfully *******
-   
-   [INFO] Time taken: 0:00:45
-
-Level 2 (L2)
-^^^^^^^^^^^^
-
-See the full output :doc:`here <sec_ex_A03_L2_prompt_output>`
+See the full output :doc:`here <sec_ex_A10_L3_prompt_output>`
 
 Common errors
 -------------
