@@ -111,30 +111,15 @@ Methodology
 
 Level 1 (L1)
 ^^^^^^^^^^^^
-At level 1, the WEIS eigenanalysis capability is leveraged, and the natural frequencies of the modes of vibration of the tower are read from the WEIS output xlsx file.
-
-The two parameters read are:
-
-- ``floatingse.fore_aft_freqs``: natural frequencies of vibration of the fore-aft modes of vibration of the tower.
-- ``floatingse.side_side_freqs``: natural frequencies of vibration of the side-side modes of vibration of the tower.
-
-The advantage of this analysis at this level is its speed, but it is considered less accurate than the level 2 analysis (see below).
+N/A
 
 Level 2 (L2)
 ^^^^^^^^^^^^
-At level 2, two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simulations are conducted. More specifically, two free decay tests are conducted, by imposing an initial displacement at the tower top, once in the fore-aft direction, and once in the side-to-side direction.
+N/A
 
-Considering a no wind, no waves, no currents environment, the tower top is deformed in the fore-aft direction (1st simulation) and side-to-side direction (2nd simulation), by imposing a displacement of the tower top as starting value of the simulation.
-
-Then, a frequency analysis of the free decay tower top displacement response signal is performed (SCUBE postprocessing), identifying the peak frequency, which is assumed to be the 1st natural frequency of the relevant tower mode of vibration.
-
-These frequencies are then compared against the values specified in the constraint input spreadsheet.
-
-.. note::
-
-   Differently from L1, at L2 two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simulations are run, and postprocessed.
-
-   Nonetheless, since only two simulations are run, and since they are rather short (around 5 seconds), also this analysis is rather quick, taking only a few minutes.
+Level 3 (L2)
+^^^^^^^^^^^^
+TBA
 
 Perform the analysis
 --------------------
@@ -155,7 +140,18 @@ Tower
 Metocean
 ^^^^^^^^
 
-This analysis does not need to consider the conditions specified in the metocean input spreadsheet, so this can be ignored.
+- Open the file ``INPUT_environment.xlsx``
+- Familiarise yourself with the variables, explained in the ``legend`` sheet
+- Specify the metocean conditions in the ``wind_wave`` sheet
+
+.. note::
+
+   For DLC 1.6, only the following columns of the ``wind_wave`` sheet are used:
+
+   - V_hub__mps (m/s), hub height wind speed
+   - V_10__mps (m/s), wind speed at 10m height (above sea level)
+   - Hs_SSS__m (m), Severe Sea State, Spectral significant wave height conditional on V_10_mps
+   - Tp_SSS__s (s), Severe Sea State, Peak spectral period conditional on V_10_mps and Hs
 
 Run the analysis
 ~~~~~~~~~~~~~~~~
@@ -172,13 +168,7 @@ Run the analysis
 
 .. code:: bash
 
-  python main.py A03 L1
-
-or
-
-.. code:: bash
-
-  python main.py A03 L2
+  python main.py A10 L3
 
 Expected conda prompt outcome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
