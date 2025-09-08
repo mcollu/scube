@@ -28,7 +28,9 @@ The algorithm is as follow, according to DNV-OS-E301 Guidance Note (Dec 2024), C
 - For the transformation used in engineering standards (maxima conversion):
   
   - Number of expected independent maxima:
+
     .. math::
+    
       n = \frac{\text{total_duration}}{\text{average_period}}
   
   - Many standards use 3600 seconds as the reference duration (e.g., for 1 hour maxima count):
