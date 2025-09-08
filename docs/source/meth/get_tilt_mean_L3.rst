@@ -1,4 +1,5 @@
-.. function:: get_tilt_mean_L3
+get_tilt_mean_L3
+================
 
    Derive the average platform tilt angle for each OpenFAST simulation.
 
