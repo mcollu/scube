@@ -6,8 +6,8 @@ Derive the average platform tilt angle for each OpenFAST simulation.
 This function:
 
 - reads simulation output (usually ``.outb`` files),
-- extract the platform roll and platform pitch time signals,
-- derive from roll and pitch the total platform tilt signal,
+- extract the platform roll (``PtfmRoll``) and platform pitch (``PtfmPitch``) time signals,
+- derive from roll and pitch the total platform tilt signal, as :math:`tilt = \sqrt{PtfmRoll^2 + PtfmPitch^2}`
 - calculate the average of the platform tilt signal
 
 .. seealso:: Function ``get_tilt_mean_L3`` in the file ``scube\src\scube\postpro\postprocessing.py``
