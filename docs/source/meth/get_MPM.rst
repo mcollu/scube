@@ -1,55 +1,55 @@
 get_MPM
 =======
 
-- Converts the input ``maxima`` into a NumPy array using ``np.asarray`` for robust numerical operations. [web:16]
+Mathematical Steps for Weibull → Gumbel Transformation
+------------------------------------------------------
 
-- Defines the number of cycles ``n`` as ``3600. / average_period``, referencing DNV-OS-E301 guidance for normalization over 1 hour. [web:19]
-
-- Fits a Weibull distribution to ``maxima``, extracting the ``shape``, ``loc``, and ``scale`` parameters. [web:5][web:11]
-
-- Computes intermediary variables:
+- Fit a Weibull distribution to your dataset of maxima:
   
-  - ``alpha = scale``
-  - ``beta = shape``
-  - ``gamma = loc``
-
-- Uses the fitted Weibull parameters to derive Gumbel distribution parameters via the following transformation: [web:16][web:4]
-
-  - \[
-    \alpha_g = \frac{\beta}{\alpha} \cdot [\ln(n)]^{\frac{\beta - 1}{\beta}}
-    \]
-  - \[
-    \beta_g = \gamma + \alpha \cdot [\ln(n)]^{1/\beta}
-    \]
-
-  - The resulting Gumbel parameters are:
-    - ``scale_gumbel = 1 / alpha_g``
-    - ``loc_gumbel = beta_g``
-
-- Defines the Most Probable Maximum (``MPM``) as the location parameter of the derived Gumbel distribution: ``MPM = loc_gumbel``. [web:6][web:16]
-
-- Returns a tuple ``(MPM, shape, loc, scale, scale_gumbel, loc_gumbel)`` containing the derived values.
-
-- Handles any errors by returning a tuple of ``np.nan`` values.
-
-Schematic docstring for Weibull-to-Gumbel parameter mapping (as LaTeX math):
-
-.. math::
-
-   n = \frac{3600}{T_\mathrm{avg}} \\
-
-   \text{Fit:} ~ Weibull(x; \beta, \gamma, \alpha) \\
-
-   \alpha_g = \frac{\beta}{\alpha} \cdot [\ln(n)]^{(\beta-1)/\beta} \\
-
-   \beta_g  = \gamma + \alpha \cdot [\ln(n)]^{1/\beta} \\
-
-   \text{Gumbel~parameters:} ~ scale = 1/\alpha_g, ~ location = \beta_g \\
-
-   MPM = \beta_g
+  - Weibull cumulative distribution function:
+    .. math::
+      F(x; k, \lambda) = 1 - e^{-(x / \lambda)^k}
+  
+  - Fit data to obtain:
+    - ``shape`` parameter: \( k \)
+    - ``scale`` parameter: \( \lambda \)
+    - ``location`` parameter (if using 3-parameter): \( \theta \) [optional]
+    
+- For maxima analysis according to extreme value theory, the logarithm of a Weibull random variable is Gumbel distributed:
+  
+  - If \( X \sim \mathrm{Weibull}(\lambda, k) \), then \( G = \log(X) \) is Gumbel (minimum) distributed with:
+    - Location parameter: \( \mu = \log(\lambda) \)
+    - Scale parameter: \( \beta = 1/k \)
+    - So \( G \sim \mathrm{Gumbel}_{\min}(\log(\lambda), 1/k) \) [web:24][web:27]
+    
+- For the transformation used in engineering standards (maxima conversion):
+  
+  - Number of expected independent maxima:
+    .. math::
+      n = \frac{\text{total_duration}}{\text{average_period}}
+  
+  - Many standards use 3600 seconds as the reference duration (e.g., for 1 hour maxima count):
+    .. math::
+      n = \frac{3600}{T_\text{avg}}
+  
+  - The Most Probable Maximum (MPM) for the Gumbel distribution:
+    .. math::
+      \text{MPM} = \mu + \beta \cdot \ln(n)
+      
+    where:
+      - \( \mu \) is the location parameter (from Weibull fit)
+      - \( \beta \) is the scale parameter (from Weibull fit or conversion)
+      - \( n \) is the expected number of maxima
+      
+  - If Weibull fit gives shape \( k \), scale \( \lambda \):
+    .. math::
+      \mu = \log(\lambda)
+      \quad
+      \beta = 1/k
+      \quad
+      \text{MPM} = \log(\lambda) + \frac{1}{k} \cdot \ln(n)
 
 References:  
-- DNV-OS-E301 Guidance Note (Dec 2024), Ch.2 Sec.2 [web:19][web:13]
-- Weibull and Gumbel extreme value theory [web:4][web:16][web:6]
+- DNV-OS-E301 Guidance Note (Dec 2024), Ch.2 Sec.2
 
 .. seealso:: Function ``get_MPM`` in the file ``scube\src\scube\postpro\postprocessing.py``
