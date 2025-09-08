@@ -8,6 +8,7 @@ The algorithm is as follow, according to DNV-OS-E301 Guidance Note (Dec 2024), C
 - Fit a Weibull distribution to your dataset of maxima:
   
   - Weibull cumulative distribution function:
+    
     .. math::
       
       F(x; k, \lambda) = 1 - e^{-(x / \lambda)^k}
