@@ -10,7 +10,6 @@ The algorithm is as follow, according to DNV-OS-E301 Guidance Note (Dec 2024), C
   - Weibull cumulative distribution function:
     
     .. math::
-      
       F(x; k, \lambda) = 1 - e^{-(x / \lambda)^k}
   
   - Fit data to obtain:
@@ -30,7 +29,6 @@ The algorithm is as follow, according to DNV-OS-E301 Guidance Note (Dec 2024), C
   - Number of expected independent maxima:
 
     .. math::
-    
       n = \frac{\text{total_duration}}{\text{average_period}}
   
   - Use 3600 seconds as the reference duration (e.g., for 1 hour maxima count):
