@@ -1,13 +1,15 @@
 get_MPM
 =======
 
-Mathematical Steps for Weibull → Gumbel Transformation
-------------------------------------------------------
+This function takes as input the identified maxima, and output the Most Probable Maximum.
+
+The algorithm is as follow, according to DNV-OS-E301 Guidance Note (Dec 2024), Ch.2 Sec.2:
 
 - Fit a Weibull distribution to your dataset of maxima:
   
   - Weibull cumulative distribution function:
     .. math::
+      
       F(x; k, \lambda) = 1 - e^{-(x / \lambda)^k}
   
   - Fit data to obtain:
