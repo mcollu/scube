@@ -33,7 +33,8 @@ The algorithm is as follow, according to DNV-OS-E301 Guidance Note (Dec 2024), C
     
       n = \frac{\text{total_duration}}{\text{average_period}}
   
-  - Many standards use 3600 seconds as the reference duration (e.g., for 1 hour maxima count):
+  - Use 3600 seconds as the reference duration (e.g., for 1 hour maxima count):
+
     .. math::
       n = \frac{3600}{T_\text{avg}}
   
