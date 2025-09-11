@@ -7,15 +7,15 @@ Analysis A11 L3: DLC 6.1 serviceability, geometric clearance and structural chec
 
 .. warning::
 
-   This analysis will perform a number of OpenFAST time domain simulations (~10, depending on the metocean combinations), and therefore can take a considerable amount of computing time (5 hours on an HPC desktop machine, using 1 core).
+   This analysis will perform a number of OpenFAST time-domain simulations (~10, depending on the metocean combinations), and therefore can take a considerable amount of computing time (5 hours on an HPC desktop machine, using 1 core).
 
 Introduction
 ------------
 Aim
 ~~~
-To perform a series of checks consideering the design load case DLC 1.6:
+To perform a series of checks considering the design load case DLC 1.6:
 
-- Serviceability limit state chcks:
+- Serviceability limit state checks:
 
   - Mean tilt angle < constraint
   - Max tilt angle < constraint
@@ -37,7 +37,7 @@ To perform a series of checks consideering the design load case DLC 1.6:
 
 Constraints
 ~~~~~~~~~~~
-To be specified in CNSTR.xlsx .
+To be specified in ``CNSTR.xlsx``.
 
 Level 1 (L1)
 ^^^^^^^^^^^^
@@ -211,6 +211,6 @@ Permission error
 
 The file ``INPUT_tower.xlsx`` is still open on your pc. In order to be safely read by SCUBE, the file needs to be closed.
 
-A similar error can occur for ``CNSTR.xlsx``
+A similar error can occur for ``CNSTR.xlsx``.
 
 
