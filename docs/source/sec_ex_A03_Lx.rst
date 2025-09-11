@@ -13,7 +13,7 @@ To verify if the natural frequencies of the tower's flexible modes are sufficien
 
 Constraints
 ~~~~~~~~~~~
-To be specified in CNSTR.xlsx .
+To be specified in CNSTR.xlsx.
 
 Level 1 (L1)
 ^^^^^^^^^^^^
@@ -222,7 +222,7 @@ Level 1 (L1)
 Level 2 (L2)
 ^^^^^^^^^^^^
 
-See the full output :doc:`here <sec_ex_A03_L2_prompt_output>`
+See the full output :doc:`here <sec_ex_A03_L2_prompt_output>`.
 
 Common errors
 -------------
