@@ -26,15 +26,15 @@ An explanation of each parameter of the configuration is provided in the comment
 
 .. code:: yaml
 
-   # config.yaml
-
+  # config.yaml
+  
   # INPUT
   reference_turbine_yaml: "data/ref_turbines/IEA-15-240-RWT_VolturnUS-S.yaml"     # Reference floating wind turbine to be modified (all systems, defined as per WEIS convention)
   environment_input:      "data/INPUT_environment.xlsx"                           # Input spreadsheet - location environmental conditions (wind, wave)
   tower_geometry_input:   "data/INPUT_tower.xlsx"                                 # Input spreadsheet - tower characteristics (geometry, material)
   
   # ANALYSIS
-  constraints_xlsx:       "CNSTR.xlsx"                        # Input spreadsheet - constraints to be inposed. NB All the constraints for all the analyses are in here. One tab for each analysis
+  constraints_xlsx:       "CNSTR.xlsx"                        # Input spreadsheet - constraints to be imposed. NB All the constraints for all the analyses are in here. One tab for each analysis
   constraints_sheet_fmt:  "constraints_{ANALYSIS}"            # Input spreadsheet - constraints for the specific analysis, naming convention
   
       ## WEIS
