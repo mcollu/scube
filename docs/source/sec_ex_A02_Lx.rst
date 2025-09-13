@@ -55,7 +55,7 @@ where
 +----------------------+------+------------------------------------------------------------+
 |  :math:`F_B`         | N    | Buoyancy force (at rest)                                   |
 +----------------------+------+------------------------------------------------------------+
-|  :math:`GM_{pitch}`  | m    | Metacentric height around for a rotation around the y axis |
+|  :math:`GM_{pitch}`  | m    | Metacentric height for a rotation around the y axis        |
 +----------------------+------+------------------------------------------------------------+
 
 Level 1 (L1)
@@ -66,7 +66,7 @@ Level 2 (L2)
 ^^^^^^^^^^^^
 .. warning::
 
-   Differently from L0, at this analysis level a series of OpenFAST aero-hydro-servo-elastic coupled model of dynamics analyses are run, and postprocessed, therefore while A02 L0 takes a minute or so, A02 L2 may take 20-30 minutes to run.
+   Differently from L0, at this analysis level, a series of OpenFAST aero-hydro-servo-elastic coupled model of dynamics analyses are run, and postprocessed, therefore while A02 L0 takes a minute or so, A02 L2 may take 20-30 minutes to run.
 
 OpenFAST is utilised to derive this parameter, adopting the following settings:
 
@@ -82,17 +82,17 @@ OpenFAST is utilised to derive this parameter, adopting the following settings:
 - Simulation:
    - Analysis time: 600 seconds
 
-SCUBE postprocessing extracts the last 60s of the roll (``PtfmRoll``) and pitch (``PtfmPitch``) OpenFAST output signals, derive the total tilt angle (square root of sum of squares), and then calculates its average, which is then compared against the average specified in the constraint file.
+SCUBE postprocessing extracts the last 60s of the roll (``PtfmRoll``) and pitch (``PtfmPitch``) OpenFAST output signals, derives the total tilt angle (square root of sum of squares), and then calculates its average, which is then compared against the average specified in the constraint file.
 
 .. note::
 
    This is not a realistic wind, waves, and currents situation, since there are no waves, no currents, and the wind speed is constant in time (steady), therefore the metocean conditions will NOT be taken from the Metocean input xlsx.
 
-   It is only used to have an estimation of the average tilt angle of the overall system with a constant aerodynamic thrust force. In the simulation, the platform will initially drift toward the horizontal equilibrium condition (transient), and will then reach the final equilibrium position.
+   It is only used to estimate the average tilt angle of the overall system with a constant aerodynamic thrust force. In the simulation, the platform will initially drift toward the horizontal equilibrium condition (transient), and will then reach the final equilibrium position.
 
 .. note::
 
-   If you wish to change the OpenFAST settings mentioned above, these can be changed by modifying the relevant values in the WEIS input file ``modeling_options_A02_L2.yaml``, which can be found in the folder ``scube\data\weis_anlyses\A02_L2\``: look at the values at line 110 and afterward, which shold look like the following code.
+   If you wish to change the OpenFAST settings mentioned above, these can be changed by modifying the relevant values in the WEIS input file ``modeling_options_A02_L2.yaml``, which can be found in the folder ``scube\data\weis_anlyses\A02_L2\``: look at the values at line 110 and beyond, which should look like the following code:
 
    .. code:: yaml
 
@@ -244,4 +244,4 @@ Permission error
 
 The file ``INPUT_tower.xlsx`` is still open on your pc. In order to be safely read by SCUBE, the file needs to be closed.
 
-A similar error can occur for ``CNSTR.xlsx``
+A similar error can occur for ``CNSTR.xlsx``.
