@@ -9,7 +9,7 @@ How do you run an analysis with SCUBE?
 
   conda activate weis-env
 - Navigate to the root folder ``scube``
-- Launch the analysis Axy Lz with the following command
+- Launch the analysis A<nn> L<m>, where *nn* stands for analysis number, for example *01* in the following example, and *m* the level number, for example *1* in the following example, with the following command:
 .. code:: bash
 
   python main.py A01 L1
