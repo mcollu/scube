@@ -13,9 +13,9 @@ Introduction
 ------------
 Aim
 ~~~
-To perform a series of checks consideering the design load case DLC 1.6:
+To perform a series of checks considering the design load case DLC 1.6:
 
-- Serviceability limit state chcks:
+- Serviceability limit state checks:
 
   - Mean tilt angle < constraint
   - Max tilt angle < constraint
@@ -37,7 +37,7 @@ To perform a series of checks consideering the design load case DLC 1.6:
 
 Constraints
 ~~~~~~~~~~~
-To be specified in CNSTR.xlsx .
+To be specified in ``CNSTR.xlsx``.
 
 Level 1 (L1)
 ^^^^^^^^^^^^
