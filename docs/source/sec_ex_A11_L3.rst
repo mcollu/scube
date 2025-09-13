@@ -1,4 +1,4 @@
-Analysis A10 L3: DLC 1.6 serviceability, geometric clearance and structural checks
+Analysis A11 L3: DLC 6.1 serviceability, geometric clearance and structural checks
 ==================================================================================
 
 .. warning::
@@ -7,7 +7,7 @@ Analysis A10 L3: DLC 1.6 serviceability, geometric clearance and structural chec
 
 .. warning::
 
-   This analysis will perform a number of OpenFAST time domain simulations (~100, depending on the metocean combinations), and therefore can take a considerable amount of computing time (2-3 days on an HPC desktop machine, using 1 core).
+   This analysis will perform a number of OpenFAST time-domain simulations (~10, depending on the metocean combinations), and therefore can take a considerable amount of computing time (5 hours on an HPC desktop machine, using 1 core).
 
 Introduction
 ------------
@@ -109,41 +109,40 @@ Level 2 (L2)
 ^^^^^^^^^^^^
 N/A
 
-Level 3 (L2)
+Level 3 (L3)
 ^^^^^^^^^^^^
 
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-| Type        | Check                              | OpenFAST variable                | Method                                     |
-+=============+====================================+==================================+============================================+
-| SLS         |                                    |                                  |                                            |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | Mean tilt angle                    | PtfmPitch, PtfmRoll              | :doc:`Link <meth/get_tilt_mean_L3>`        |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | Max tilt angle                     | PtfmPitch, PtfmRoll              | :doc:`Link <meth/get_tilt_max_L3>`         |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | MPM tilt angle                     | PtfmPitch, PtfmRoll              | :doc:`Link <meth/get_tilt_MPM_L3>`         |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | Max nac. acc. (x,y,z)              | NcIMUTAxs, NcIMUTAys, NcIMUTAzs  | :doc:`Link <meth/get_nac_acc_xyz_max_L3>`  |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | MPM nac. acc. (x,y,z)              | NcIMUTAxs, NcIMUTAys, NcIMUTAzs  | :doc:`Link <meth/get_nac_acc_xyz_MPM_L3>`  |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-| Geometric   |                                    |                                  |                                            |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | Min distance blade tip-tower axis  | TipClrnc1, TipClrnc2, TipClrnc3  | :doc:`Link <meth/get_bld_tip_clr_twr_L3>`  |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-| Structural  |                                    |                                  |                                            |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | Max tower base shear               | TwrBsFxt, TwrBsFyt               | :doc:`Link <meth/get_twr_bs_shear_max_L3>` |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | MPM tower base sheat               | TwrBsFxt, TwrBsFyt               | :doc:`Link <meth/get_twr_bs_shear_MPM_L3>` |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | Max tower base bending moment      | TwrBsMxt, TwrBsMyt               | :doc:`Link <meth/get_twr_bs_bend_max_L3>`  |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | MPM tower base bending moment      | TwrBsMxt, TwrBsMyt               | :doc:`Link <meth/get_twr_bs_bend_MPM_L3>`  |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-|             | Local buckling                     | Various                          | Please refer to Eq 3.11, DNV RP C202       |
-+-------------+------------------------------------+----------------------------------+--------------------------------------------+
-
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+| Type       | Check                             | OpenFAST variable                           | Method                                     |
++============+===================================+=============================================+============================================+
+| SLS        |                                   |                                             |                                            |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | Mean tilt angle                   | ``PtfmPitch``, ``PtfmRoll``                 | `Link <meth/get_tilt_mean_L3.rst>`_            |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | Max tilt angle                    | ``PtfmPitch``, ``PtfmRoll``                 | `Link <meth/get_tilt_max_L3.rst>`_         |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | MPM tilt angle                    | ``PtfmPitch``, ``PtfmRoll``                 | `Link <meth/get_tilt_MPM_L3.rst>`_         |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | Max nac. acc. (x,y,z)             | ``NcIMUTAxs``, ``NcIMUTAys``, ``NcIMUTAzs`` | `Link <meth/get_nac_acc_xyz_max_L3.rst>`_  |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | MPM nac. acc. (x,y,z)             | ``NcIMUTAxs``, ``NcIMUTAys``, ``NcIMUTAzs`` | `Link <meth/get_nac_acc_xyz_MPM_L3.rst>`_  |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+| Geometric  |                                   |                                             |                                            |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | Min distance blade tip-tower axis | ``TipClrnc1``, ``TipClrnc2``, ``TipClrnc3`` | `Link <meth/get_bld_tip_clr_twr_L3.rst>`_  |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+| Structural |                                   |                                             |                                            |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | Max tower base shear              | ``TwrBsFxt``, ``TwrBsFyt``                  | `Link <meth/get_twr_bs_shear_max_L3.rst>`_ |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | MPM tower base sheat              | ``TwrBsFxt``, ``TwrBsFyt``                  | `Link <meth/get_twr_bs_shear_MPM_L3.rst>`_ |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | Max tower base bending moment     | ``TwrBsMxt``, ``TwrBsMyt``                  | `Link <meth/get_twr_bs_bend_max_L3.rst>`_  |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | MPM tower base bending moment     | ``TwrBsMxt``, ``TwrBsMyt``                  | `Link <meth/get_twr_bs_bend_MPM_L3.rst>`_  |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
+|            | Local buckling                    | Various                                     | Please refer to Eq 3.11, DNV RP C202       |
++------------+-----------------------------------+---------------------------------------------+--------------------------------------------+
 
 Perform the analysis
 --------------------
@@ -166,16 +165,14 @@ Metocean
 
 - Open the file ``INPUT_environment.xlsx``
 - Familiarise yourself with the variables, explained in the ``legend`` sheet
-- Specify the metocean conditions in the ``wind_wave`` sheet
+- Specify the metocean conditions in the ``other`` sheet
 
 .. note::
 
-   For DLC 1.6, only the following columns of the ``wind_wave`` sheet are used:
+   For DLC 6.1, only the following columns of the ``wind_wave`` sheet are used:
 
-   - V_hub__mps (m/s), hub height wind speed
-   - V_10__mps (m/s), wind speed at 10m height (above sea level)
-   - Hs_SSS__m (m), Severe Sea State, Spectral significant wave height conditional on V_10_mps
-   - Tp_SSS__s (s), Severe Sea State, Peak spectral period conditional on V_10_mps and Hs
+   - Hs50__m (m), spectral significant wave height with a return period of 50 years
+   - Tp50__s (s), peak spectral period associated with Hs50
 
 Run the analysis
 ~~~~~~~~~~~~~~~~
@@ -192,7 +189,7 @@ Run the analysis
 
 .. code:: bash
 
-  python main.py A10 L3
+  python main.py A11 L3
 
 Expected conda prompt outcome
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -201,7 +198,7 @@ If all goes well, you should see something similar to the following.
 Level 3 (L3)
 ^^^^^^^^^^^^
 
-See the full output :doc:`here <sec_ex_A10_L3_prompt_output>`
+See the full output :doc:`here <sec_ex_A11_L3_prompt_output>`
 
 Common errors
 -------------
@@ -214,5 +211,6 @@ Permission error
 
 The file ``INPUT_tower.xlsx`` is still open on your pc. In order to be safely read by SCUBE, the file needs to be closed.
 
-A similar error can occur for ``CNSTR.xlsx``
+A similar error can occur for ``CNSTR.xlsx``.
+
 
