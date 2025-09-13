@@ -18,11 +18,9 @@ How do you run an analysis with SCUBE?
 Configuration file
 ------------------
 
-Should you wish to change the position and/or name of some of the files and folders used by SCUBE, you should edit the ``config.yaml`` file with your desired parameters before running the analysis.
+Should you wish to change the position and/or name of some of the files and folders used by SCUBE, you should edit the ``config.yaml`` file in the root folder (``scube``) with your desired parameters before running the analysis.
 
-This file is in the root folder (i.e., ``scube``).
-
-An explanation of each parameter of the configuration is provided in the comments of the file.
+An explanation of each configuration parameter is provided in the comments throughout the file.
 
 .. code:: yaml
 
