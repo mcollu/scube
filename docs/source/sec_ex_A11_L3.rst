@@ -3,10 +3,6 @@ Analysis A11 L3: DLC 6.1 serviceability, geometric clearance and structural chec
 
 .. warning::
 
-   WORK IN PROGRESS - IGNORE FOR THE TIME BEING
-
-.. warning::
-
    This analysis will perform a number of OpenFAST time-domain simulations (~10, depending on the metocean combinations), and therefore can take a considerable amount of computing time (5 hours on an HPC desktop machine, using 1 core).
 
 Introduction
@@ -37,7 +33,6 @@ To perform a series of checks considering the design load case DLC 1.6:
 
 Constraints
 ~~~~~~~~~~~
-To be specified in ``CNSTR.xlsx``.
 
 Level 1 (L1)
 ^^^^^^^^^^^^
@@ -151,6 +146,15 @@ Prepare the input file
 ~~~~~~~~~~~~~~~~~~~~~~
 The SCUBE input data can be found in the folder ``scube\data``.
 
+Constraints
+^^^^^^^^^^^
+
+- Open the file ``CNSTR.xlsx``
+- Familiarise yourself with the variables, explained in the ``legend`` sheet
+- Select the sheet ``constraints_A11_L3``
+- A pre-prepared list of contraints and values can be found. Adjust the value for each constraint (where available) if necessary
+- Save and close the spreadsheet file
+
 Tower
 ^^^^^
 
@@ -159,17 +163,19 @@ Tower
 - Specify the geometry of the cans in the ``geometry`` sheet
 - Specify the aerodynamic drag properties of the tower in the ``drag`` sheet (if unsure, leave the default values, they can be applied to a wide range of dimensions)
 - Specify the tower material characteristics in the ``material`` sheet (the default values are for the steel	ASTM A572 Grade 50, see more `here	<http://www.matweb.com/search/DataSheet.aspx?MatGUID=9ced5dc901c54bd1aef19403d0385d7f>`_)
+- Save and close the spreadsheet file
 
-Metocean
-^^^^^^^^
+Environment
+^^^^^^^^^^^
 
 - Open the file ``INPUT_environment.xlsx``
 - Familiarise yourself with the variables, explained in the ``legend`` sheet
-- Specify the metocean conditions in the ``other`` sheet
+- Specify the relevant (see note below) metocean conditions in the ``other`` sheet
+- Save and close the spreadsheet file
 
 .. note::
 
-   For DLC 6.1, only the following columns of the ``wind_wave`` sheet are used:
+   For DLC 6.1, only the following columns of the ``other`` sheet are used:
 
    - Hs50__m (m), spectral significant wave height with a return period of 50 years
    - Tp50__s (s), peak spectral period associated with Hs50
