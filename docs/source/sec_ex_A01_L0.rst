@@ -1,10 +1,6 @@
 Analysis A01 L0: tower geometrical characteristics check
 ========================================================
 
-.. warning::
-
-   WORK IN PROGRESS - IGNORE FOR THE TIME BEING
-
 Introduction
 ------------
 Aim
