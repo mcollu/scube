@@ -1,10 +1,6 @@
 Analysis A03 Lx: tower natural frequencies of vibration
 =======================================================
 
-.. warning::
-
-   WORK IN PROGRESS - IGNORE FOR THE TIME BEING
-
 Introduction
 ------------
 Aim
@@ -13,7 +9,6 @@ To verify if the natural frequencies of the tower's flexible modes are sufficien
 
 Constraints
 ~~~~~~~~~~~
-To be specified in CNSTR.xlsx.
 
 Level 1 (L1)
 ^^^^^^^^^^^^
@@ -99,6 +94,15 @@ Prepare the input file
 ~~~~~~~~~~~~~~~~~~~~~~
 The SCUBE input data can be found in the folder ``scube\data``.
 
+Constraints
+^^^^^^^^^^^
+
+- Open the file ``CNSTR.xlsx``
+- Familiarise yourself with the variables, explained in the ``legend`` sheet
+- Select the sheet ``constraints_A03_L1`` for level 1 (L1) analysis, or ``constraints_A03_L2`` for level 2 (L2) analysis
+- A pre-prepared list of contraints and values can be found. Adjust the value for each constraint (where available) if necessary
+- Save and close the spreadsheet file
+
 Tower
 ^^^^^
 
@@ -107,11 +111,12 @@ Tower
 - Specify the geometry of the cans in the ``geometry`` sheet
 - Specify the aerodynamic drag properties of the tower in the ``drag`` sheet (if unsure, leave the default values, they can be applied to a wide range of dimensions)
 - Specify the tower material characteristics in the ``material`` sheet (the default values are for the steel	ASTM A572 Grade 50, see more `here	<http://www.matweb.com/search/DataSheet.aspx?MatGUID=9ced5dc901c54bd1aef19403d0385d7f>`_)
+- Save and close the spreadsheet file
 
-Metocean
-^^^^^^^^
+Environment
+^^^^^^^^^^^
 
-This analysis does not need to consider the conditions specified in the metocean input spreadsheet, so this can be ignored.
+For this analysis, this input file is not used, so you can ignore it.
 
 Run the analysis
 ~~~~~~~~~~~~~~~~
