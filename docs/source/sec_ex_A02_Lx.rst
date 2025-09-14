@@ -85,47 +85,6 @@ SCUBE postprocessing extracts the last 60s of the roll (``PtfmRoll``) and pitch 
 
    It is only used to estimate the average tilt angle of the overall system with a constant aerodynamic thrust force. In the simulation, the platform will initially drift toward the horizontal equilibrium condition (transient), and will then reach the final equilibrium position.
 
-.. note::
-
-   If you wish to change the OpenFAST settings mentioned above, these can be changed by modifying the relevant values in the WEIS input file ``modeling_options_A02_L2.yaml``, which can be found in the folder ``scube\data\weis_anlyses\A02_L2\``: look at the values at line 110 and beyond, which should look like the following code:
-
-   .. code:: yaml
-
-      DLC_driver:
-       openfast_input_map:
-           inflow_prop_dir: [InflowWind,PropagationDir]
-           nac_yaw_dir: [ElastoDyn,NacYaw]
-       DLCs:
-           - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
-             wind_speed:           [10.64]
-             user_group:
-               - inflow_prop_dir:  [0.]
-               - nac_yaw_dir:      [0.]
-             analysis_time: 600 #600
-             transient_time: 0
-             turbulent_wind:
-               flag: True
-               HubHt: 150
-               WindProfileType: 'PL'
-               RefHt: 150
-               PLExp: 0.12
-               TurbModel: 'NONE'
-           - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
-             wind_speed:           [10.64]
-             user_group:
-               - inflow_prop_dir:  [30.]
-               - nac_yaw_dir:      [-30.]
-             analysis_time: 600 #600
-             transient_time: 0
-             turbulent_wind:
-               flag: True
-               HubHt: 150
-               WindProfileType: 'PL'
-               RefHt: 150
-               PLExp: 0.12
-               TurbModel: 'NONE'
-           (and other similar for the other directions)
-
 Perform the analysis
 --------------------
 
@@ -156,6 +115,38 @@ Environment
 ^^^^^^^^^^^
 
 For this analysis, this input file is not used, so you can ignore it.
+
+OpenFAST simulation settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As mentioned, this analysis, at level 2 (L2), runs a series of (simple) OpenFAST analyses (see Methodology above).
+
+The default values are relevant for the IEA 15MW Umaine semisubmrsible platform (see `here <https://github.com/IEAWindSystems/IEA-15-240-RWT/blob/master/Documentation/IEA-15-240-RWT_tabular.xlsx>`_).
+If another wind turbine generator and/or another floating support structure are considered, the OpenFAST settings should be checked and, if necessary, adjusted.
+
+If you wish to change the OpenFAST settings mentioned above, these can be changed by modifying the relevant values in the WEIS input file ``modeling_options_A02_L2.yaml``, which can be found in the folder ``scube\data\weis_anlyses\A02_L2\``: look at the values at line 110 and beyond. Please look at the in-line comments (i.e,, the text after the "#" symbol) for further info on the parameter description.
+
+   .. code:: yaml
+
+      DLC_driver:
+          openfast_input_map:
+              inflow_prop_dir: [InflowWind,PropagationDir]
+              nac_yaw_dir: [ElastoDyn,NacYaw]
+          DLCs:
+              - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
+                wind_speed:           [10.64] # (m/s) Wind turbine rated wind speed
+                user_group:
+                  - inflow_prop_dir:  [0., 30., 60., 90., 120.]    # (deg) Wind propagation direction (for direction convention, please refer to the parameter "PropagationDir" in here: https://openfast.readthedocs.io/en/dev/source/user/fast.farm/InputFiles.html#ambient-wind-with-inflowwind-module-input-files
+                    nac_yaw_dir:      [0., -30., -60., -90., -120.]    # (deg) Initial or fixed nacelle-yaw angle (degrees). NB To align wind and nacelle, nac_yaw_dir = -inflow_prop_dir, e.g., if inflow_prop_dir= [30.], nac_yaw_dir= [-30.]
+                analysis_time: 600 #600       # (s)   OpenFAST simulation analysis time.
+                transient_time: 0
+                turbulent_wind:
+                  flag: True
+                  HubHt: 150                  # (m)   Wind turbine rotor hub height, inertial axis system
+                  WindProfileType: 'PL'
+                  RefHt: 150                  # (m)   Reference height, height at which the wind speed (i.e, "wind_speed") is given. Keep equal to HubHt
+                  PLExp: 0.12                 # (N/A) Wind profile power law exponent
+                  TurbModel: 'NONE'
 
 Run the analysis
 ~~~~~~~~~~~~~~~~
