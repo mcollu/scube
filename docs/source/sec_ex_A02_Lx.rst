@@ -136,7 +136,7 @@ If you wish to change the OpenFAST settings mentioned above, these can be change
               - DLC: "1.2" # With the new WEIS release, to be substituted by "Steady"
                 wind_speed:           [10.64] # (m/s) Wind turbine rated wind speed
                 user_group:
-                  - inflow_prop_dir:  [0., 30., 60., 90., 120.]    # (deg) Wind propagation direction (for direction convention, please refer to the parameter "PropagationDir" in here: https://openfast.readthedocs.io/en/dev/source/user/fast.farm/InputFiles.html#ambient-wind-with-inflowwind-module-input-files
+                  - inflow_prop_dir:  [0., 30., 60., 90., 120.]    # (deg) Wind propagation directions (for direction convention, please refer to the parameter "PropagationDir" in here: https://openfast.readthedocs.io/en/dev/source/user/fast.farm/InputFiles.html#ambient-wind-with-inflowwind-module-input-files
                     nac_yaw_dir:      [0., -30., -60., -90., -120.]    # (deg) Initial or fixed nacelle-yaw angle (degrees). NB To align wind and nacelle, nac_yaw_dir = -inflow_prop_dir, e.g., if inflow_prop_dir= [30.], nac_yaw_dir= [-30.]
                 analysis_time: 600 #600       # (s)   OpenFAST simulation analysis time.
                 transient_time: 0
