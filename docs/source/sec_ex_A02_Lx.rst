@@ -153,6 +153,9 @@ For example, it may be necessary to change:
 - The rated wind speed at which these simulations are done: change the value of ``wind_speed``
 - The number of wind directions over which the simulation is performed: change the values in the ``inflow_prop_dir`` vector, and accordingly the ``nac_yaw_dir`` vector. For notation, please see `here <https://openfast.readthedocs.io/en/dev/source/user/fast.farm/InputFiles.html#ambient-wind-with-inflowwind-module-input-files>`_
 - The simulation time length: change ``analysis_time``, making sure it is long enough to have the initial transient responses disappear
+- The hub height: change ``HubHt``
+- The reference height, at which the wind speed is specified: change ``RefHt``
+- The wind profile power law exponent: change ``PLExp``
 
 Run the analysis
 ~~~~~~~~~~~~~~~~
