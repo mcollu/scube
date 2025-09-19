@@ -65,10 +65,11 @@ This should install all the SCUBE scripts and all the required packages.
 
    These have been copied from the WEIS package available at the time of the development of the scube package (before August 2025).
 
-   Depending on when you will be installing scube, these may be obsolete with respect to the version of OpenFAST, ROSCO, and other packages within the WEIS version installed by you, and my need ot be updated.
-   To be sure not to have conflicts, once installed WEIS and scube, do the following:
-   - copy the folder ``WEIS\examples\01_aeroelasticse`` into ``scube\data\01_aeroelasticse`` (overwriting)
-   - copy the folder ``WEIS\examples\00_setup\ref_turbines`` into ``scube\data\ref_turbines``
+   Depending on when you will be installing scube, these may be obsolete with respect to the version of OpenFAST, ROSCO, and other packages within the WEIS version installed by you, and may need to be updated.
+   To avoid conflicts, after installing WEIS and scube, do the following:
+   
+   - copy the folder ``WEIS\examples\01_aeroelasticse`` into ``scube\data\01_aeroelasticse`` (overwriting),
+   - copy the folder ``WEIS\examples\00_setup\ref_turbines`` into ``scube\data\ref_turbines``.
 
 Testing
 -------
