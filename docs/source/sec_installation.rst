@@ -57,6 +57,19 @@ This should install all the SCUBE scripts and all the required packages.
    
       pip uninstall scube
 
+.. warning::
+   The ``scube.zip`` file provided comes with the following folders:
+
+   - ``scube\data\01_aeroelasticse``
+   - ``scube\data\ref_turbines``
+
+   These have been copied from the WEIS package available at the time of the development of the scube package (before August 2025).
+
+   Depending on when you will be installing scube, these may be obsolete with respect to the version of OpenFAST, ROSCO, and other packages within the WEIS version installed by you, and my need ot be updated.
+   To be sure not to have conflicts, once installed WEIS and scube, do the following:
+   - copy the folder ``WEIS\examples\01_aeroelasticse`` into ``scube\data\01_aeroelasticse`` (overwriting)
+   - copy the folder ``WEIS\examples\00_setup\ref_turbines`` into ``scube\data\ref_turbines``
+
 Testing
 -------
 After installation, you can run a quick check to verify the correct installation.
@@ -105,3 +118,4 @@ N.B. Some WEIS "Warnings" may appear. They are not critical.
    [INFO] Time taken: 0:00:03
 
 3. Check in the folder ``scube\tests\output`` the validation reports created (e.g., validation_report_A03_L2.xlsx).
+   
