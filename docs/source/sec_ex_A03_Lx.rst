@@ -77,7 +77,7 @@ At level 2, two OpenFAST aero-hydro-servo-elastic coupled model of dynamics simu
 
 Considering a no wind, no waves, no currents environment, the tower top is deformed in the fore-aft direction (1st simulation) and side-to-side direction (2nd simulation), by imposing a displacement of the tower top as starting value of the simulation.
 
-Then, a frequency analysis of the free decay tower top displacement response signal is performed (SCUBE postprocessing), identifying the peak frequency, which is assumed to be the 1st natural frequency of the relevant tower mode of vibration.
+Then, a frequency analysis of the free decay tower top displacement response signal is performed (SCUBE postprocessing), identifying the peak frequency, which is assumed to be the 1st natural frequency of the tower.
 
 These frequencies are then compared against the values specified in the constraint input spreadsheet.
 
@@ -100,7 +100,7 @@ Constraints
 - Open the file ``CNSTR.xlsx``
 - Familiarise yourself with the variables, explained in the ``legend`` sheet
 - Select the sheet ``constraints_A03_L1`` for level 1 (L1) analysis, or ``constraints_A03_L2`` for level 2 (L2) analysis
-- A pre-prepared list of contraints and values can be found. Adjust the value for each constraint (where available) if necessary
+- A pre-prepared list of constraints and values can be found. Adjust the value for each constraint (where available) if necessary
 - Save and close the spreadsheet file
 
 Tower
