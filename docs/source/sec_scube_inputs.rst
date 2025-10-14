@@ -1,8 +1,8 @@
 SCUBE Inputs
 ============
 
-Basic level
------------
+Basic level (Basic user)
+------------------------
 
 If you want to use the pre-set wind turbine and support structure (IEA15MW UMaine semisub), and the pre-set metocean combinations for DLC1.2, DLC1.6, DLC6.1:
 
@@ -15,8 +15,8 @@ If you are running an analysis of level 3 (L3), then you may want to modify the 
 
 Each of this spreadsheet file as a "legend" sheet, with explanations.
 
-Medium level
-------------
+Medium level (Power user)
+-------------------------
 If you want to use the pre-set wind turbine and support structure (IEA15MW UMaine semisub), but change the metocean combinations for DLC1.2, DLC1.6, DLC6.1, first of all modify as desired the basic set of inputs:
 
 - Tower geometry and material: ``scube\data\sample_INPUT_tower.xlsx``
@@ -58,8 +58,8 @@ This is a ``.yaml`` file. You can change the DLC settings in the ``DLC_driver`` 
    
    For example, in this case, 9 simulations will be carried out: 3 wave directions, due to “- wave_dir”, times 3 nacelle directions, due to “nace_dir”. The wind propagation direction, “pro_dir”, is coupled with the nacelle direction, i.e., for nace_dir = -90, the prop_dir is automatically set to 90, for nace_dir = 0, the prop_dir is automatically set to 0, and so on.
 
-Advanced level
---------------
+Advanced level (Superuser)
+--------------------------
 
 This level allows you to introduce new constraints.
 
