@@ -5,18 +5,18 @@ Installation
 
 .. warning::
    The instructions below will install the latest version of WEIS, which may not be compatible with the version of WEIS used to develop **scube**. If the user is savvy enough to be able to update/adapt the scube scripts to the newer version of WEIS, use the instructions below.
-If not, please use the following instructions:
-1. Install the version of WEIS provided in the shared folder
-   1. Expand the WEIS zipped folder in a location of choice
-   2. In a miniforge prompt, do the following:
-      .. code:: bash
-         cd WEIS
-         conda env create --name weis-scube-env -f environment.yml
-         conda activate weis-scube-env
-         conda install -y mpi4py
-         pip install -e.
-         conda install openfast=4.0.4 openfast-io=4.0.2 rosco=2.9.7 moorpy=1.1.0 # This command realigns some of the dependencies to the version used when developing SCUBE
-2. Install the **scube** version provided in in the shared folder (See installation instruction from step 5 onward below)
+   If not, please use the following instructions:
+   1. Install the version of WEIS provided in the shared folder
+      1. Expand the WEIS zipped folder in a location of choice
+      2. In a miniforge prompt, do the following:
+         .. code:: bash
+            cd WEIS
+            conda env create --name weis-scube-env -f environment.yml
+            conda activate weis-scube-env
+            conda install -y mpi4py
+            pip install -e.
+            conda install openfast=4.0.4 openfast-io=4.0.2 rosco=2.9.7 moorpy=1.1.0 # This command realigns some of the dependencies to the version used when developing SCUBE
+   2. Install the **scube** version provided in in the shared folder (See installation instruction from step 5 onward below)
          
 
 Pre-requisites
