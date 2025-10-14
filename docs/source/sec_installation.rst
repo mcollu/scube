@@ -11,6 +11,7 @@ Installation
       2. In a miniforge prompt, do the following:
 
          .. code:: bash
+
             cd WEIS
             conda env create --name weis-scube-env -f environment.yml
             conda activate weis-scube-env
