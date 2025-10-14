@@ -8,6 +8,7 @@ Installation
    If not, please use the following instructions:
 
    1. Install the version of WEIS provided in the shared folder
+
       1. Expand the WEIS zipped folder in a location of choice
       2. In a miniforge prompt, do the following:
 
