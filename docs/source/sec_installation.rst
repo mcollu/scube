@@ -4,7 +4,7 @@ Installation
 ============
 
 .. warning::
-   The instructions below will install the latest version of WEIS, which may not be compatible with the version of WEIS used to develop **scube**. If the user is savvy enough to be able to update/adapt the scube scripts to the newer version of WEIS, use the instructions below.
+   The instructions in this page, after this warning box, will install the latest version of WEIS, which may not be the same version of WEIS used to develop **scube**. If the user is savvy enough to be able to update/adapt the scube scripts to the newer version of WEIS, use the instructions prvided in this page, after this warning box.
    If not, please use the following instructions:
 
    1. Install the version of WEIS provided in the shared folder
